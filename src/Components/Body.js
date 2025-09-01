@@ -19,23 +19,20 @@ const Body=()=>{
     const [baks,setbaks]=useState("");
 
     const isOnline=onlineStatus();
-    
-    const {LoggedIn,setUserName}=useContext(UserContext);
 
     useEffect(()=>{
         fetchData();
     },[])
 
     const fetchData=async ()=>{
-        const Data=await fetch("https://www.swiggy.com/dapi/restaurants/list/v5?lat=28.7040592&lng=77.10249019999999&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING");
+        const Data=await fetch("https://proxy.cors.sh/https://www.swiggy.com/dapi/restaurants/list/v5?lat=28.7040592&lng=77.10249019999999&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING",{
+            headers:{
+                'x-cors-api-key':"temp_a09aeb4da8968b2402cf6a9e6253ecb1"
+            }
+        });
 
         const json=await Data.json();
 
-        // const tot=json?.data?.cards[2]?.card?.card?.gridElements?.infoWithStyle?.restaurants;
-        
-        // resiii=tot;
-        // SetResList(tot)
-        
         const findRestaurants = (obj) => {
             if (obj && typeof obj === 'object') {
                 if (obj.hasOwnProperty('restaurants')) {
@@ -73,7 +70,7 @@ const Body=()=>{
         )
     }
     return(
-        <div id="body">
+        <div>
             <div className="flex items-center justify-evenly">
             
                 <div className="px-5 h-7.5 rounded-lg bg cursor-pointer border-2 border-black hover:text-white hover:bg-black">Restaurent count : {ResList.length}</div>

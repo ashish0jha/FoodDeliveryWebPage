@@ -19,6 +19,8 @@ const Shimmer=()=>{
                 <div className="w-75 h-82 m-2.5 mb-17.5 rounded-4xl bg-gray-200"></div>
                 <div className="w-75 h-82 m-2.5 mb-17.5 rounded-4xl bg-gray-200"></div>
                 <div className="w-75 h-82 m-2.5 mb-17.5 rounded-4xl bg-gray-200"></div>
+                <div className="w-75 h-82 m-2.5 mb-17.5 rounded-4xl bg-gray-200"></div>
+                <div className="w-75 h-82 m-2.5 mb-17.5 rounded-4xl bg-gray-200"></div>
                 
             </div>
         </div>
