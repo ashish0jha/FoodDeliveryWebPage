@@ -16,7 +16,7 @@ const Header=()=>{
     const [logInName,setlogInName]=useState("");
 
     return(
-        <div className="sticky top-0 z-50 flex justify-between shadow-xl items-center h-[100px] bg-white ">
+        <div className="sticky top-0 z-50 flex justify-between shadow-xl items-center md:h-[100px] bg-white w-full">
             <div className='LogoPart'>
                 <img className="w-25" src={LOGO_Link} alt="Logo" />
 

@@ -3,7 +3,6 @@ import { useState , useEffect,useContext} from "react";
 import Shimmer from "./Shimmer";
 import {Link} from "react-router";
 import onlineStatus from "../utils/useonlinestatus";
-import UserContext from "../utils/UserContext";
 
 let resiii;
 
@@ -59,12 +58,8 @@ const Body=()=>{
     if(!isOnline){
         return(
             <div>
-                <h1>🔴 Offline , Please check your internet connection!!</h1>
-                <h4>Click Below to Engage yourself</h4>
-                <button onClick={()=>{
-                    setbaks("F*ck You, Bi*ch !!! ")
-                }}>CLick Here</button>
-                <h1 id="baks3">{baks}</h1>
+                <h1 className="flex justify-center text-4xl items-center">🔴 Offline , Please check your internet connection!!</h1>
+                
             </div>
             
         )
