@@ -2,6 +2,7 @@ import {addItem} from "../utils/CartSlice";
 import { useDispatch } from "react-redux";
 import AddedToCart from "./AddedToCart";
 import { useState } from "react";
+import { Link } from "react-router";
 
 const Item=(({menuPart})=>{
     const dispatch=useDispatch();
@@ -16,7 +17,7 @@ const Item=(({menuPart})=>{
     }
     return(
         <div>
-            {showAdded && <AddedToCart msg="Added to"/>}
+            {showAdded && <Link to="/Cart"><AddedToCart msg="Added to"/></Link> }
             {menuPart.itemCards.map((menu)=>{
                 const {id,name,defaultPrice,price,ratings,description,imageId}=menu.card.info;
                 
