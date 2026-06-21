@@ -1,0 +1,1869 @@
+{
+  "restaurants": [
+    {
+      "@type": "type.googleapis.com/swiggy.presentation.food.v2.Restaurant",
+      "info": {
+        "id": "16866",
+        "name": "Pizza Hut",
+        "cloudinaryImageId": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/RX_THUMBNAIL/IMAGES/VENDOR/2026/6/15/d181ea45-e599-46a4-834d-cd8befc37797_16866.JPG",
+        "locality": "Rohini",
+        "areaName": "Rohini",
+        "costForTwo": "₹350 for two",
+        "cuisines": [
+          "Pizzas"
+        ],
+        "avgRating": 4.3,
+        "parentId": "721",
+        "avgRatingString": "4.3",
+        "totalRatingsString": "7.2K+",
+        "sla": {
+          "deliveryTime": 21,
+          "lastMileTravel": 2.4,
+          "serviceability": "SERVICEABLE",
+          "slaString": "20-25 mins",
+          "lastMileTravelString": "2.4 km",
+          "iconType": "ICON_TYPE_EMPTY"
+        },
+        "availability": {
+          "nextCloseTime": "2026-06-20 03:45:00",
+          "opened": true
+        },
+        "badges": {
+          "imageBadges": [
+            {
+              "imageId": "android/static-assets/icons/big_rx.png",
+              "description": "bolt!"
+            }
+          ]
+        },
+        "isOpen": true,
+        "type": "F",
+        "aggregatedDiscountInfoV3": {
+          "header": "ITEMS",
+          "subHeader": "AT ₹129"
+        },
+        "externalRatings": {
+          "aggregatedRating": {
+            "rating": "3.9",
+            "ratingCount": "838"
+          },
+          "source": "GOOGLE",
+          "sourceIconImageId": "v1704440323/google_ratings/rating_google_tag"
+        },
+        "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+      },
+      "analytics": {
+        "context": "seo-data-dadf84f7-8cf6-403f-b52e-fa1b56d5054f"
+      },
+      "cta": {
+        "link": "https://www.swiggy.com/city/delhi/pizza-hut-rohini-rest16866",
+        "text": "RESTAURANT_MENU",
+        "type": "WEBLINK"
+      },
+      "widgetId": "collectionV5RestaurantListWidget_SimRestoRelevance_food_seo"
+    },
+    {
+      "@type": "type.googleapis.com/swiggy.presentation.food.v2.Restaurant",
+      "info": {
+        "id": "603438",
+        "name": "Chinese Wok",
+        "cloudinaryImageId": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/e0839ff574213e6f35b3899ebf1fc597",
+        "locality": "Sector 7",
+        "areaName": "Rohini",
+        "costForTwo": "₹250 for two",
+        "cuisines": [
+          "Chinese",
+          "Asian",
+          "Tibetan",
+          "Desserts"
+        ],
+        "avgRating": 4.2,
+        "parentId": "61955",
+        "avgRatingString": "4.2",
+        "totalRatingsString": "3.1K+",
+        "sla": {
+          "deliveryTime": 25,
+          "lastMileTravel": 3,
+          "serviceability": "SERVICEABLE",
+          "slaString": "20-25 mins",
+          "lastMileTravelString": "3.0 km",
+          "iconType": "ICON_TYPE_EMPTY"
+        },
+        "availability": {
+          "nextCloseTime": "2026-06-20 01:00:00",
+          "opened": true
+        },
+        "badges": {
+          "imageBadges": [
+            {
+              "imageId": "brand_cards/Badges%202026/46_Best%20in%20Chinese2026.png",
+              "description": "Top-rated for Chinese, based on user votes."
+            }
+          ]
+        },
+        "isOpen": true,
+        "type": "F",
+        "aggregatedDiscountInfoV3": {
+          "header": "70% OFF",
+          "subHeader": "UPTO ₹140"
+        },
+        "externalRatings": {
+          "aggregatedRating": {
+            "rating": "--"
+          }
+        },
+        "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+      },
+      "analytics": {
+        "context": "seo-data-dadf84f7-8cf6-403f-b52e-fa1b56d5054f"
+      },
+      "cta": {
+        "link": "https://www.swiggy.com/city/delhi/chinese-wok-sector-7-rohini-rest603438",
+        "text": "RESTAURANT_MENU",
+        "type": "WEBLINK"
+      },
+      "widgetId": "collectionV5RestaurantListWidget_SimRestoRelevance_food_seo"
+    },
+    {
+      "@type": "type.googleapis.com/swiggy.presentation.food.v2.Restaurant",
+      "info": {
+        "id": "1364806",
+        "name": "Boba Bhai - Bubble Tea & Korean Street Food",
+        "cloudinaryImageId": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/RX_THUMBNAIL/IMAGES/VENDOR/2026/4/24/175c7524-58be-43d1-9014-2f67b2d9221b_1364806.jpg",
+        "locality": "Sector 7",
+        "areaName": "Pocket C9",
+        "costForTwo": "₹200 for two",
+        "cuisines": [
+          "Bubble Tea",
+          "Burger",
+          "Korean",
+          "Beverages",
+          "Fast Food",
+          "Juice and shake"
+        ],
+        "avgRating": 4.3,
+        "parentId": "361235",
+        "avgRatingString": "4.3",
+        "totalRatingsString": "35",
+        "sla": {
+          "deliveryTime": 25,
+          "lastMileTravel": 3,
+          "serviceability": "SERVICEABLE",
+          "slaString": "25-30 mins",
+          "lastMileTravelString": "3.0 km",
+          "iconType": "ICON_TYPE_EMPTY"
+        },
+        "availability": {
+          "nextCloseTime": "2026-06-25 00:00:00",
+          "opened": true
+        },
+        "badges": {},
+        "isOpen": true,
+        "type": "F",
+        "aggregatedDiscountInfoV3": {
+          "header": "ITEMS",
+          "subHeader": "AT ₹99"
+        },
+        "isNewlyOnboarded": true,
+        "externalRatings": {
+          "aggregatedRating": {
+            "rating": "4.3",
+            "ratingCount": "45"
+          },
+          "source": "GOOGLE",
+          "sourceIconImageId": "v1704440323/google_ratings/rating_google_tag"
+        },
+        "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+      },
+      "analytics": {
+        "context": "seo-data-dadf84f7-8cf6-403f-b52e-fa1b56d5054f"
+      },
+      "cta": {
+        "link": "https://www.swiggy.com/city/delhi/boba-bhai-bubble-tea-and-korean-street-food-sector-7-pocket-c9-rest1364806",
+        "text": "RESTAURANT_MENU",
+        "type": "WEBLINK"
+      },
+      "widgetId": "collectionV5RestaurantListWidget_SimRestoRelevance_food_seo"
+    },
+    {
+      "@type": "type.googleapis.com/swiggy.presentation.food.v2.Restaurant",
+      "info": {
+        "id": "10208",
+        "name": "Burger King",
+        "cloudinaryImageId": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/RX_THUMBNAIL/IMAGES/VENDOR/2025/6/18/7a2aca35-9ddb-4c31-a82e-6d3c9c665f43_10208.jpg",
+        "locality": "Sector 10",
+        "areaName": "Rohini",
+        "costForTwo": "₹350 for two",
+        "cuisines": [
+          "Burgers",
+          "American"
+        ],
+        "avgRating": 4.3,
+        "parentId": "166",
+        "avgRatingString": "4.3",
+        "totalRatingsString": "67K+",
+        "sla": {
+          "deliveryTime": 16,
+          "lastMileTravel": 2.1,
+          "serviceability": "SERVICEABLE",
+          "slaString": "15-20 mins",
+          "lastMileTravelString": "2.1 km",
+          "iconType": "ICON_TYPE_EMPTY"
+        },
+        "availability": {
+          "nextCloseTime": "2026-06-20 06:00:00",
+          "opened": true
+        },
+        "badges": {
+          "imageBadges": [
+            {
+              "imageId": "android/static-assets/icons/big_rx.png",
+              "description": "bolt!"
+            },
+            {
+              "imageId": "brand_cards/Badges%202026/41_Best%20in%20Burger2026.png",
+              "description": "Top-rated for Burger, based on user votes."
+            }
+          ]
+        },
+        "isOpen": true,
+        "type": "F",
+        "aggregatedDiscountInfoV3": {
+          "header": "ITEMS",
+          "subHeader": "AT ₹59"
+        },
+        "externalRatings": {
+          "aggregatedRating": {
+            "rating": "--"
+          }
+        },
+        "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+      },
+      "analytics": {
+        "context": "seo-data-dadf84f7-8cf6-403f-b52e-fa1b56d5054f"
+      },
+      "cta": {
+        "link": "https://www.swiggy.com/city/delhi/burger-king-sector-10-rohini-rest10208",
+        "text": "RESTAURANT_MENU",
+        "type": "WEBLINK"
+      },
+      "widgetId": "collectionV5RestaurantListWidget_SimRestoRelevance_food_seo"
+    },
+    {
+      "@type": "type.googleapis.com/swiggy.presentation.food.v2.Restaurant",
+      "info": {
+        "id": "26723",
+        "name": "KFC",
+        "cloudinaryImageId": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/RX_THUMBNAIL/IMAGES/VENDOR/2026/4/11/6d352ed0-561e-4cd3-9220-b812e7e4917e_26723.JPG",
+        "locality": "Rohini",
+        "areaName": "Rohini",
+        "costForTwo": "₹400 for two",
+        "cuisines": [
+          "Burgers",
+          "Fast Food",
+          "Rolls & Wraps"
+        ],
+        "avgRating": 4.4,
+        "parentId": "547",
+        "avgRatingString": "4.4",
+        "totalRatingsString": "13K+",
+        "sla": {
+          "deliveryTime": 18,
+          "lastMileTravel": 2.4,
+          "serviceability": "SERVICEABLE",
+          "slaString": "15-20 mins",
+          "lastMileTravelString": "2.4 km",
+          "iconType": "ICON_TYPE_EMPTY"
+        },
+        "availability": {
+          "nextCloseTime": "2026-06-20 05:00:00",
+          "opened": true
+        },
+        "badges": {
+          "imageBadges": [
+            {
+              "imageId": "android/static-assets/icons/big_rx.png",
+              "description": "bolt!"
+            },
+            {
+              "imageId": "brand_cards/Badges%202026/40_Best%20in%20Bolt2026.png",
+              "description": "Top-rated for Bolt, based on user votes."
+            },
+            {
+              "imageId": "brand_cards/Badges%202026/41_Best%20in%20Burger2026.png",
+              "description": "Top-rated for Burger, based on user votes."
+            }
+          ]
+        },
+        "isOpen": true,
+        "type": "F",
+        "aggregatedDiscountInfoV3": {
+          "header": "50% OFF",
+          "discountTag": "FLAT DEAL"
+        },
+        "externalRatings": {
+          "aggregatedRating": {
+            "rating": "4.3",
+            "ratingCount": "3.6K+"
+          },
+          "source": "GOOGLE",
+          "sourceIconImageId": "v1704440323/google_ratings/rating_google_tag"
+        },
+        "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+      },
+      "analytics": {
+        "context": "seo-data-dadf84f7-8cf6-403f-b52e-fa1b56d5054f"
+      },
+      "cta": {
+        "link": "https://www.swiggy.com/city/delhi/kfc-rohini-rest26723",
+        "text": "RESTAURANT_MENU",
+        "type": "WEBLINK"
+      },
+      "widgetId": "collectionV5RestaurantListWidget_SimRestoRelevance_food_seo"
+    },
+    {
+      "@type": "type.googleapis.com/swiggy.presentation.food.v2.Restaurant",
+      "info": {
+        "id": "254192",
+        "name": "McDonald's",
+        "cloudinaryImageId": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/RX_THUMBNAIL/IMAGES/VENDOR/2025/1/9/cb63e1b8-69b4-4974-a297-45d5439ff374_254192.JPG",
+        "locality": "Sector 10",
+        "areaName": "Rohini",
+        "costForTwo": "₹400 for two",
+        "cuisines": [
+          "American",
+          "Fast Food",
+          "Beverages"
+        ],
+        "avgRating": 4.5,
+        "parentId": "630",
+        "avgRatingString": "4.5",
+        "totalRatingsString": "29K+",
+        "sla": {
+          "deliveryTime": 20,
+          "lastMileTravel": 2.3,
+          "serviceability": "SERVICEABLE",
+          "slaString": "15-20 mins",
+          "lastMileTravelString": "2.3 km",
+          "iconType": "ICON_TYPE_EMPTY"
+        },
+        "availability": {
+          "nextCloseTime": "2026-06-20 05:45:00",
+          "opened": true
+        },
+        "badges": {
+          "imageBadges": [
+            {
+              "imageId": "brand_cards/Badges%202026/40_Best%20in%20Bolt2026.png",
+              "description": "Top-rated for Bolt, based on user votes."
+            },
+            {
+              "imageId": "brand_cards/Badges%202026/41_Best%20in%20Burger2026.png",
+              "description": "Top-rated for Burger, based on user votes."
+            }
+          ]
+        },
+        "isOpen": true,
+        "type": "F",
+        "aggregatedDiscountInfoV3": {
+          "header": "ITEMS",
+          "subHeader": "AT ₹52"
+        },
+        "externalRatings": {
+          "aggregatedRating": {
+            "rating": "--"
+          }
+        },
+        "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+      },
+      "analytics": {
+        "context": "seo-data-dadf84f7-8cf6-403f-b52e-fa1b56d5054f"
+      },
+      "cta": {
+        "link": "https://www.swiggy.com/city/delhi/mcdonalds-sector-10-rohini-rest254192",
+        "text": "RESTAURANT_MENU",
+        "type": "WEBLINK"
+      },
+      "widgetId": "collectionV5RestaurantListWidget_SimRestoRelevance_food_seo"
+    },
+    {
+      "@type": "type.googleapis.com/swiggy.presentation.food.v2.Restaurant",
+      "info": {
+        "id": "622616",
+        "name": "Domino's Pizza",
+        "cloudinaryImageId": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/RX_THUMBNAIL/IMAGES/VENDOR/2026/6/5/855cd7a0-9c4e-473a-b8fc-904b36e24aea_622616.JPG",
+        "locality": "3rd Sector",
+        "areaName": "Rohini",
+        "costForTwo": "₹400 for two",
+        "cuisines": [
+          "Pizzas",
+          "Italian",
+          "Pastas",
+          "Desserts"
+        ],
+        "avgRating": 4.5,
+        "parentId": "2456",
+        "avgRatingString": "4.5",
+        "totalRatingsString": "2.4K+",
+        "sla": {
+          "deliveryTime": 25,
+          "lastMileTravel": 0.9,
+          "serviceability": "SERVICEABLE",
+          "slaString": "20-25 mins",
+          "lastMileTravelString": "0.9 km",
+          "iconType": "ICON_TYPE_EMPTY"
+        },
+        "availability": {
+          "nextCloseTime": "2026-06-19 23:59:00",
+          "opened": true
+        },
+        "badges": {
+          "imageBadges": [
+            {
+              "imageId": "android/static-assets/icons/big_rx.png",
+              "description": "bolt!"
+            },
+            {
+              "imageId": "brand_cards/Badges%202026/72_Best%20in%20Pizza2026.png",
+              "description": "Top-rated for Pizza, based on user votes."
+            }
+          ]
+        },
+        "isOpen": true,
+        "type": "F",
+        "aggregatedDiscountInfoV3": {
+          "header": "ITEMS",
+          "subHeader": "AT ₹59"
+        },
+        "externalRatings": {
+          "aggregatedRating": {
+            "rating": "--"
+          }
+        },
+        "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+      },
+      "analytics": {
+        "context": "seo-data-dadf84f7-8cf6-403f-b52e-fa1b56d5054f"
+      },
+      "cta": {
+        "link": "https://www.swiggy.com/city/delhi/dominos-pizza-3rd-sector-rohini-rest622616",
+        "text": "RESTAURANT_MENU",
+        "type": "WEBLINK"
+      },
+      "widgetId": "collectionV5RestaurantListWidget_SimRestoRelevance_food_seo"
+    },
+    {
+      "@type": "type.googleapis.com/swiggy.presentation.food.v2.Restaurant",
+      "info": {
+        "id": "444780",
+        "name": "Theobroma",
+        "cloudinaryImageId": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/RX_THUMBNAIL/IMAGES/VENDOR/2026/6/18/92f27858-1977-4be8-b54a-9f4cdce1bff9_444780.JPG",
+        "locality": "Rohini",
+        "areaName": "Rohini",
+        "costForTwo": "₹400 for two",
+        "cuisines": [
+          "Bakery",
+          "Desserts"
+        ],
+        "avgRating": 4.6,
+        "parentId": "1040",
+        "avgRatingString": "4.6",
+        "totalRatingsString": "5.4K+",
+        "sla": {
+          "deliveryTime": 15,
+          "lastMileTravel": 2.4,
+          "serviceability": "SERVICEABLE",
+          "slaString": "10-15 mins",
+          "lastMileTravelString": "2.4 km",
+          "iconType": "ICON_TYPE_EMPTY"
+        },
+        "availability": {
+          "nextCloseTime": "2026-06-20 00:00:00",
+          "opened": true
+        },
+        "badges": {
+          "imageBadges": [
+            {
+              "imageId": "android/static-assets/icons/big_rx.png",
+              "description": "bolt!"
+            },
+            {
+              "imageId": "brand_cards/Badges%202026/45_Best%20in%20Cheesecake2026.png",
+              "description": "Top-rated for Cheesecake, based on user votes."
+            },
+            {
+              "imageId": "newg.png",
+              "description": "Premium gourmet restaurant offering an elevated, high-quality food experience."
+            }
+          ]
+        },
+        "isOpen": true,
+        "type": "F",
+        "aggregatedDiscountInfoV3": {
+          "header": "ITEMS",
+          "subHeader": "AT ₹35"
+        },
+        "externalRatings": {
+          "aggregatedRating": {
+            "rating": "4.1",
+            "ratingCount": "201"
+          },
+          "source": "GOOGLE",
+          "sourceIconImageId": "v1704440323/google_ratings/rating_google_tag"
+        },
+        "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+      },
+      "analytics": {
+        "context": "seo-data-dadf84f7-8cf6-403f-b52e-fa1b56d5054f"
+      },
+      "cta": {
+        "link": "https://www.swiggy.com/city/delhi/theobroma-rohini-rest444780",
+        "text": "RESTAURANT_MENU",
+        "type": "WEBLINK"
+      },
+      "widgetId": "collectionV5RestaurantListWidget_SimRestoRelevance_food_seo"
+    },
+    {
+      "@type": "type.googleapis.com/swiggy.presentation.food.v2.Restaurant",
+      "info": {
+        "id": "R1001",
+        "name": "Behrouz Biryani",
+        "locality": "Connaught Place",
+        "areaName": "CP",
+        "costForTwo": "₹500 for two",
+        "cuisines": [
+          "Biryani",
+          "Mughlai",
+          "North Indian"
+        ],
+        "avgRating": 4.5,
+        "avgRatingString": "4.5",
+        "totalRatingsString": "18.4K+",
+        "sla": {
+          "deliveryTime": 35,
+          "lastMileTravel": 4.2,
+          "serviceability": "SERVICEABLE",
+          "slaString": "30-35 mins",
+          "lastMileTravelString": "4.2 km"
+        },
+        "availability": {
+          "nextCloseTime": "2026-06-21 02:00:00",
+          "opened": true
+        },
+        "isOpen": true,
+        "type": "F",
+        "aggregatedDiscountInfoV3": {
+          "header": "60% OFF",
+          "subHeader": "UPTO ₹120"
+        },
+        "cloudinaryImageId": "https://images.unsplash.com/photo-1556745750-68295fefafc5"
+      },
+      "cta": {
+        "link": "https://www.swiggy.com/restaurants/behrouz-biryani-cp-rest1001",
+        "text": "RESTAURANT_MENU",
+        "type": "WEBLINK"
+      }
+    },
+    {
+      "@type": "type.googleapis.com/swiggy.presentation.food.v2.Restaurant",
+      "info": {
+        "id": "R1002",
+        "name": "Biryani Blues",
+        "locality": "Lajpat Nagar",
+        "areaName": "Lajpat Nagar",
+        "costForTwo": "₹450 for two",
+        "cuisines": [
+          "Biryani",
+          "Hyderabadi",
+          "Kebabs"
+        ],
+        "avgRating": 4.3,
+        "avgRatingString": "4.3",
+        "totalRatingsString": "9.1K+",
+        "sla": {
+          "deliveryTime": 28,
+          "lastMileTravel": 3.1,
+          "serviceability": "SERVICEABLE",
+          "slaString": "25-30 mins",
+          "lastMileTravelString": "3.1 km"
+        },
+        "availability": {
+          "nextCloseTime": "2026-06-21 01:30:00",
+          "opened": true
+        },
+        "isOpen": true,
+        "type": "F",
+        "aggregatedDiscountInfoV3": {
+          "header": "ITEMS",
+          "subHeader": "AT ₹149"
+        },
+        "cloudinaryImageId": "https://plus.unsplash.com/premium_photo-1661883237884-263e8de8869b"
+      },
+      "cta": {
+        "link": "https://www.swiggy.com/restaurants/biryani-blues-lajpat-nagar-rest1002",
+        "text": "RESTAURANT_MENU",
+        "type": "WEBLINK"
+      }
+    },
+    {
+      "@type": "type.googleapis.com/swiggy.presentation.food.v2.Restaurant",
+      "info": {
+        "id": "R1003",
+        "name": "Haldiram's",
+        "locality": "Sector 14",
+        "areaName": "Rohini",
+        "costForTwo": "₹300 for two",
+        "cuisines": [
+          "North Indian",
+          "Sweets",
+          "Snacks",
+          "Beverages"
+        ],
+        "avgRating": 4.4,
+        "avgRatingString": "4.4",
+        "totalRatingsString": "32K+",
+        "sla": {
+          "deliveryTime": 22,
+          "lastMileTravel": 2.8,
+          "serviceability": "SERVICEABLE",
+          "slaString": "20-25 mins",
+          "lastMileTravelString": "2.8 km"
+        },
+        "availability": {
+          "nextCloseTime": "2026-06-20 23:00:00",
+          "opened": true
+        },
+        "isOpen": true,
+        "type": "F",
+        "aggregatedDiscountInfoV3": {
+          "header": "ITEMS",
+          "subHeader": "AT ₹49"
+        },
+        "cloudinaryImageId": "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4"
+      },
+      "cta": {
+        "link": "https://www.swiggy.com/restaurants/haldirams-rohini-rest1003",
+        "text": "RESTAURANT_MENU",
+        "type": "WEBLINK"
+      }
+    },
+    {
+      "@type": "type.googleapis.com/swiggy.presentation.food.v2.Restaurant",
+      "info": {
+        "id": "R1004",
+        "name": "Subway",
+        "locality": "Sector 3",
+        "areaName": "Rohini",
+        "costForTwo": "₹300 for two",
+        "cuisines": [
+          "Salads",
+          "Sandwiches",
+          "Wraps",
+          "Healthy Food"
+        ],
+        "avgRating": 4.1,
+        "avgRatingString": "4.1",
+        "totalRatingsString": "14.2K+",
+        "sla": {
+          "deliveryTime": 20,
+          "lastMileTravel": 1.9,
+          "serviceability": "SERVICEABLE",
+          "slaString": "15-20 mins",
+          "lastMileTravelString": "1.9 km"
+        },
+        "availability": {
+          "nextCloseTime": "2026-06-20 23:30:00",
+          "opened": true
+        },
+        "isOpen": true,
+        "type": "F",
+        "aggregatedDiscountInfoV3": {
+          "header": "20% OFF",
+          "subHeader": "UPTO ₹50"
+        },
+        "cloudinaryImageId": "https://images.unsplash.com/photo-1414235077428-338989a2e8c0"
+      },
+      "cta": {
+        "link": "https://www.swiggy.com/restaurants/subway-rohini-rest1004",
+        "text": "RESTAURANT_MENU",
+        "type": "WEBLINK"
+      }
+    },
+    {
+      "@type": "type.googleapis.com/swiggy.presentation.food.v2.Restaurant",
+      "info": {
+        "id": "R1005",
+        "name": "Barbeque Nation",
+        "locality": "Pitampura",
+        "areaName": "Pitampura",
+        "costForTwo": "₹1200 for two",
+        "cuisines": [
+          "Barbecue",
+          "North Indian",
+          "Continental",
+          "Kebabs"
+        ],
+        "avgRating": 4.6,
+        "avgRatingString": "4.6",
+        "totalRatingsString": "21.5K+",
+        "sla": {
+          "deliveryTime": 40,
+          "lastMileTravel": 5.0,
+          "serviceability": "SERVICEABLE",
+          "slaString": "35-40 mins",
+          "lastMileTravelString": "5.0 km"
+        },
+        "availability": {
+          "nextCloseTime": "2026-06-21 00:00:00",
+          "opened": true
+        },
+        "isOpen": true,
+        "type": "F",
+        "aggregatedDiscountInfoV3": {
+          "header": "ITEMS",
+          "subHeader": "AT ₹299"
+        },
+        "cloudinaryImageId": "https://plus.unsplash.com/premium_photo-1661953124283-76d0a8436b87"
+      },
+      "cta": {
+        "link": "https://www.swiggy.com/restaurants/barbeque-nation-pitampura-rest1005",
+        "text": "RESTAURANT_MENU",
+        "type": "WEBLINK"
+      }
+    },
+    {
+      "@type": "type.googleapis.com/swiggy.presentation.food.v2.Restaurant",
+      "info": {
+        "id": "R1006",
+        "name": "Faasos",
+        "locality": "Sector 11",
+        "areaName": "Rohini",
+        "costForTwo": "₹250 for two",
+        "cuisines": [
+          "Wraps",
+          "Rolls",
+          "Biryani",
+          "Fast Food"
+        ],
+        "avgRating": 4.0,
+        "avgRatingString": "4.0",
+        "totalRatingsString": "5.6K+",
+        "sla": {
+          "deliveryTime": 23,
+          "lastMileTravel": 2.5,
+          "serviceability": "SERVICEABLE",
+          "slaString": "20-25 mins",
+          "lastMileTravelString": "2.5 km"
+        },
+        "availability": {
+          "nextCloseTime": "2026-06-20 23:00:00",
+          "opened": true
+        },
+        "isOpen": true,
+        "type": "F",
+        "aggregatedDiscountInfoV3": {
+          "header": "50% OFF",
+          "subHeader": "UPTO ₹100"
+        },
+        "cloudinaryImageId": "https://images.unsplash.com/photo-1555396273-367ea4eb4db5"
+      },
+      "cta": {
+        "link": "https://www.swiggy.com/restaurants/faasos-rohini-rest1006",
+        "text": "RESTAURANT_MENU",
+        "type": "WEBLINK"
+      }
+    },
+    {
+      "@type": "type.googleapis.com/swiggy.presentation.food.v2.Restaurant",
+      "info": {
+        "id": "R1007",
+        "name": "Wow! Momo",
+        "locality": "Sector 5",
+        "areaName": "Rohini",
+        "costForTwo": "₹200 for two",
+        "cuisines": [
+          "Tibetan",
+          "Momos",
+          "Fast Food",
+          "Chinese"
+        ],
+        "avgRating": 4.2,
+        "avgRatingString": "4.2",
+        "totalRatingsString": "8.3K+",
+        "sla": {
+          "deliveryTime": 18,
+          "lastMileTravel": 1.6,
+          "serviceability": "SERVICEABLE",
+          "slaString": "15-20 mins",
+          "lastMileTravelString": "1.6 km"
+        },
+        "availability": {
+          "nextCloseTime": "2026-06-20 22:00:00",
+          "opened": true
+        },
+        "isOpen": true,
+        "type": "F",
+        "aggregatedDiscountInfoV3": {
+          "header": "ITEMS",
+          "subHeader": "AT ₹79"
+        },
+        "cloudinaryImageId": "https://images.unsplash.com/photo-1578474846511-04ba529f0b88"
+      },
+      "cta": {
+        "link": "https://www.swiggy.com/restaurants/wow-momo-rohini-rest1007",
+        "text": "RESTAURANT_MENU",
+        "type": "WEBLINK"
+      }
+    },
+    {
+      "@type": "type.googleapis.com/swiggy.presentation.food.v2.Restaurant",
+      "info": {
+        "id": "R1008",
+        "name": "Chai Point",
+        "locality": "Netaji Subhash Place",
+        "areaName": "NSP",
+        "costForTwo": "₹150 for two",
+        "cuisines": [
+          "Beverages",
+          "Snacks",
+          "Sandwiches",
+          "Tea"
+        ],
+        "avgRating": 4.1,
+        "avgRatingString": "4.1",
+        "totalRatingsString": "4.2K+",
+        "sla": {
+          "deliveryTime": 15,
+          "lastMileTravel": 1.2,
+          "serviceability": "SERVICEABLE",
+          "slaString": "10-15 mins",
+          "lastMileTravelString": "1.2 km"
+        },
+        "availability": {
+          "nextCloseTime": "2026-06-20 21:00:00",
+          "opened": true
+        },
+        "isOpen": true,
+        "type": "F",
+        "aggregatedDiscountInfoV3": {
+          "header": "ITEMS",
+          "subHeader": "AT ₹29"
+        },
+        "cloudinaryImageId": "https://images.unsplash.com/photo-1556742205-e10c9486e506"
+      },
+      "cta": {
+        "link": "https://www.swiggy.com/restaurants/chai-point-nsp-rest1008",
+        "text": "RESTAURANT_MENU",
+        "type": "WEBLINK"
+      }
+    },
+    {
+      "@type": "type.googleapis.com/swiggy.presentation.food.v2.Restaurant",
+      "info": {
+        "id": "R1009",
+        "name": "Smoke House Deli",
+        "locality": "Rajouri Garden",
+        "areaName": "Rajouri Garden",
+        "costForTwo": "₹800 for two",
+        "cuisines": [
+          "Continental",
+          "Healthy Food",
+          "Pasta",
+          "Salads"
+        ],
+        "avgRating": 4.5,
+        "avgRatingString": "4.5",
+        "totalRatingsString": "7.8K+",
+        "sla": {
+          "deliveryTime": 32,
+          "lastMileTravel": 4.5,
+          "serviceability": "SERVICEABLE",
+          "slaString": "30-35 mins",
+          "lastMileTravelString": "4.5 km"
+        },
+        "availability": {
+          "nextCloseTime": "2026-06-21 00:00:00",
+          "opened": true
+        },
+        "isOpen": true,
+        "type": "F",
+        "aggregatedDiscountInfoV3": {
+          "header": "30% OFF",
+          "subHeader": "UPTO ₹150"
+        },
+        "cloudinaryImageId": "https://plus.unsplash.com/premium_photo-1673108852141-e8c3c22a4a22"
+      },
+      "cta": {
+        "link": "https://www.swiggy.com/restaurants/smoke-house-deli-rajouri-rest1009",
+        "text": "RESTAURANT_MENU",
+        "type": "WEBLINK"
+      }
+    },
+    {
+      "@type": "type.googleapis.com/swiggy.presentation.food.v2.Restaurant",
+      "info": {
+        "id": "R1010",
+        "name": "The Beer Café",
+        "locality": "Janakpuri",
+        "areaName": "Janakpuri",
+        "costForTwo": "₹700 for two",
+        "cuisines": [
+          "Pub Food",
+          "Burgers",
+          "Continental",
+          "Beverages"
+        ],
+        "avgRating": 4.3,
+        "avgRatingString": "4.3",
+        "totalRatingsString": "6.1K+",
+        "sla": {
+          "deliveryTime": 30,
+          "lastMileTravel": 3.8,
+          "serviceability": "SERVICEABLE",
+          "slaString": "25-30 mins",
+          "lastMileTravelString": "3.8 km"
+        },
+        "availability": {
+          "nextCloseTime": "2026-06-21 02:00:00",
+          "opened": true
+        },
+        "isOpen": true,
+        "type": "F",
+        "aggregatedDiscountInfoV3": {
+          "header": "ITEMS",
+          "subHeader": "AT ₹199"
+        },
+        "cloudinaryImageId": "https://images.unsplash.com/photo-1466978913421-dad2ebd01d17"
+      },
+      "cta": {
+        "link": "https://www.swiggy.com/restaurants/the-beer-cafe-janakpuri-rest1010",
+        "text": "RESTAURANT_MENU",
+        "type": "WEBLINK"
+      }
+    },
+    {
+      "@type": "type.googleapis.com/swiggy.presentation.food.v2.Restaurant",
+      "info": {
+        "id": "R1011",
+        "name": "Social",
+        "locality": "Hauz Khas",
+        "areaName": "Hauz Khas",
+        "costForTwo": "₹900 for two",
+        "cuisines": [
+          "Café",
+          "Bar Food",
+          "Continental",
+          "Cocktails"
+        ],
+        "avgRating": 4.4,
+        "avgRatingString": "4.4",
+        "totalRatingsString": "11.2K+",
+        "sla": {
+          "deliveryTime": 38,
+          "lastMileTravel": 6.1,
+          "serviceability": "SERVICEABLE",
+          "slaString": "35-40 mins",
+          "lastMileTravelString": "6.1 km"
+        },
+        "availability": {
+          "nextCloseTime": "2026-06-21 02:30:00",
+          "opened": true
+        },
+        "isOpen": true,
+        "type": "F",
+        "aggregatedDiscountInfoV3": {
+          "header": "40% OFF",
+          "subHeader": "UPTO ₹200"
+        },
+        "cloudinaryImageId": "https://images.unsplash.com/photo-1514933651103-005eec06c04b"
+      },
+      "cta": {
+        "link": "https://www.swiggy.com/restaurants/social-hauz-khas-rest1011",
+        "text": "RESTAURANT_MENU",
+        "type": "WEBLINK"
+      }
+    },
+    {
+      "@type": "type.googleapis.com/swiggy.presentation.food.v2.Restaurant",
+      "info": {
+        "id": "R1012",
+        "name": "Keventers",
+        "locality": "Sector 8",
+        "areaName": "Rohini",
+        "costForTwo": "₹200 for two",
+        "cuisines": [
+          "Beverages",
+          "Ice Cream",
+          "Desserts",
+          "Milkshakes"
+        ],
+        "avgRating": 4.2,
+        "avgRatingString": "4.2",
+        "totalRatingsString": "3.7K+",
+        "sla": {
+          "deliveryTime": 17,
+          "lastMileTravel": 1.4,
+          "serviceability": "SERVICEABLE",
+          "slaString": "15-20 mins",
+          "lastMileTravelString": "1.4 km"
+        },
+        "availability": {
+          "nextCloseTime": "2026-06-20 23:00:00",
+          "opened": true
+        },
+        "isOpen": true,
+        "type": "F",
+        "aggregatedDiscountInfoV3": {
+          "header": "ITEMS",
+          "subHeader": "AT ₹89"
+        },
+        "cloudinaryImageId": "https://images.unsplash.com/photo-1592861956120-e524fc739696"
+      },
+      "cta": {
+        "link": "https://www.swiggy.com/restaurants/keventers-rohini-rest1012",
+        "text": "RESTAURANT_MENU",
+        "type": "WEBLINK"
+      }
+    },
+    {
+      "@type": "type.googleapis.com/swiggy.presentation.food.v2.Restaurant",
+      "info": {
+        "id": "R1013",
+        "name": "Moti Mahal Delux",
+        "locality": "Sector 12",
+        "areaName": "Rohini",
+        "costForTwo": "₹600 for two",
+        "cuisines": [
+          "North Indian",
+          "Mughlai",
+          "Tandoor",
+          "Kebabs"
+        ],
+        "avgRating": 4.4,
+        "avgRatingString": "4.4",
+        "totalRatingsString": "12.3K+",
+        "sla": {
+          "deliveryTime": 27,
+          "lastMileTravel": 2.9,
+          "serviceability": "SERVICEABLE",
+          "slaString": "25-30 mins",
+          "lastMileTravelString": "2.9 km"
+        },
+        "availability": {
+          "nextCloseTime": "2026-06-21 00:30:00",
+          "opened": true
+        },
+        "isOpen": true,
+        "type": "F",
+        "aggregatedDiscountInfoV3": {
+          "header": "ITEMS",
+          "subHeader": "AT ₹179"
+        },
+        "cloudinaryImageId": "https://plus.unsplash.com/premium_photo-1681841594224-ad729a249113"
+      },
+      "cta": {
+        "link": "https://www.swiggy.com/restaurants/moti-mahal-delux-rohini-rest1013",
+        "text": "RESTAURANT_MENU",
+        "type": "WEBLINK"
+      }
+    },
+    {
+      "@type": "type.googleapis.com/swiggy.presentation.food.v2.Restaurant",
+      "info": {
+        "id": "R1014",
+        "name": "Sushi Samba",
+        "locality": "Vasant Kunj",
+        "areaName": "Vasant Kunj",
+        "costForTwo": "₹1000 for two",
+        "cuisines": [
+          "Japanese",
+          "Sushi",
+          "Asian",
+          "Thai"
+        ],
+        "avgRating": 4.6,
+        "avgRatingString": "4.6",
+        "totalRatingsString": "4.9K+",
+        "sla": {
+          "deliveryTime": 42,
+          "lastMileTravel": 7.2,
+          "serviceability": "SERVICEABLE",
+          "slaString": "40-45 mins",
+          "lastMileTravelString": "7.2 km"
+        },
+        "availability": {
+          "nextCloseTime": "2026-06-21 00:00:00",
+          "opened": true
+        },
+        "isOpen": true,
+        "type": "F",
+        "aggregatedDiscountInfoV3": {
+          "header": "ITEMS",
+          "subHeader": "AT ₹249"
+        },
+        "cloudinaryImageId": "https://images.unsplash.com/photo-1508424757105-b6d5ad9329d0"
+      },
+      "cta": {
+        "link": "https://www.swiggy.com/restaurants/sushi-samba-vasant-kunj-rest1014",
+        "text": "RESTAURANT_MENU",
+        "type": "WEBLINK"
+      }
+    },
+    {
+      "@type": "type.googleapis.com/swiggy.presentation.food.v2.Restaurant",
+      "info": {
+        "id": "R1015",
+        "name": "Nando's",
+        "locality": "Select Citywalk",
+        "areaName": "Saket",
+        "costForTwo": "₹800 for two",
+        "cuisines": [
+          "Portuguese",
+          "Chicken",
+          "Grills",
+          "Fast Food"
+        ],
+        "avgRating": 4.4,
+        "avgRatingString": "4.4",
+        "totalRatingsString": "9.6K+",
+        "sla": {
+          "deliveryTime": 35,
+          "lastMileTravel": 5.5,
+          "serviceability": "SERVICEABLE",
+          "slaString": "30-35 mins",
+          "lastMileTravelString": "5.5 km"
+        },
+        "availability": {
+          "nextCloseTime": "2026-06-21 00:30:00",
+          "opened": true
+        },
+        "isOpen": true,
+        "type": "F",
+        "aggregatedDiscountInfoV3": {
+          "header": "25% OFF",
+          "subHeader": "UPTO ₹100"
+        },
+        "cloudinaryImageId": "https://images.unsplash.com/photo-1556742393-d75f468bfcb0"
+      },
+      "cta": {
+        "link": "https://www.swiggy.com/restaurants/nandos-saket-rest1015",
+        "text": "RESTAURANT_MENU",
+        "type": "WEBLINK"
+      }
+    },
+    {
+      "@type": "type.googleapis.com/swiggy.presentation.food.v2.Restaurant",
+      "info": {
+        "id": "R1016",
+        "name": "Taco Bell",
+        "locality": "Sector 9",
+        "areaName": "Rohini",
+        "costForTwo": "₹350 for two",
+        "cuisines": [
+          "Mexican",
+          "Fast Food",
+          "Tacos",
+          "Burgers"
+        ],
+        "avgRating": 4.2,
+        "avgRatingString": "4.2",
+        "totalRatingsString": "7.4K+",
+        "sla": {
+          "deliveryTime": 20,
+          "lastMileTravel": 2.0,
+          "serviceability": "SERVICEABLE",
+          "slaString": "15-20 mins",
+          "lastMileTravelString": "2.0 km"
+        },
+        "availability": {
+          "nextCloseTime": "2026-06-21 01:00:00",
+          "opened": true
+        },
+        "isOpen": true,
+        "type": "F",
+        "aggregatedDiscountInfoV3": {
+          "header": "ITEMS",
+          "subHeader": "AT ₹69"
+        },
+        "cloudinaryImageId": "https://images.unsplash.com/photo-1590846406792-0adc7f938f1d"
+      },
+      "cta": {
+        "link": "https://www.swiggy.com/restaurants/taco-bell-rohini-rest1016",
+        "text": "RESTAURANT_MENU",
+        "type": "WEBLINK"
+      }
+    },
+    {
+      "@type": "type.googleapis.com/swiggy.presentation.food.v2.Restaurant",
+      "info": {
+        "id": "R1017",
+        "name": "Dunkin' Donuts",
+        "locality": "Sector 13",
+        "areaName": "Rohini",
+        "costForTwo": "₹250 for two",
+        "cuisines": [
+          "Bakery",
+          "Beverages",
+          "Donuts",
+          "Sandwiches"
+        ],
+        "avgRating": 4.0,
+        "avgRatingString": "4.0",
+        "totalRatingsString": "3.5K+",
+        "sla": {
+          "deliveryTime": 19,
+          "lastMileTravel": 1.7,
+          "serviceability": "SERVICEABLE",
+          "slaString": "15-20 mins",
+          "lastMileTravelString": "1.7 km"
+        },
+        "availability": {
+          "nextCloseTime": "2026-06-20 23:00:00",
+          "opened": true
+        },
+        "isOpen": true,
+        "type": "F",
+        "aggregatedDiscountInfoV3": {
+          "header": "ITEMS",
+          "subHeader": "AT ₹59"
+        },
+        "cloudinaryImageId": "https://plus.unsplash.com/premium_photo-1661433201283-fcb240e88ad4"
+      },
+      "cta": {
+        "link": "https://www.swiggy.com/restaurants/dunkin-donuts-rohini-rest1017",
+        "text": "RESTAURANT_MENU",
+        "type": "WEBLINK"
+      }
+    },
+    {
+      "@type": "type.googleapis.com/swiggy.presentation.food.v2.Restaurant",
+      "info": {
+        "id": "R1018",
+        "name": "Café Coffee Day",
+        "locality": "Sector 6",
+        "areaName": "Rohini",
+        "costForTwo": "₹200 for two",
+        "cuisines": [
+          "Beverages",
+          "Coffee",
+          "Snacks",
+          "Desserts"
+        ],
+        "avgRating": 3.9,
+        "avgRatingString": "3.9",
+        "totalRatingsString": "5.1K+",
+        "sla": {
+          "deliveryTime": 14,
+          "lastMileTravel": 1.1,
+          "serviceability": "SERVICEABLE",
+          "slaString": "10-15 mins",
+          "lastMileTravelString": "1.1 km"
+        },
+        "availability": {
+          "nextCloseTime": "2026-06-20 22:30:00",
+          "opened": true
+        },
+        "isOpen": true,
+        "type": "F",
+        "aggregatedDiscountInfoV3": {
+          "header": "15% OFF",
+          "subHeader": "UPTO ₹40"
+        },
+        "cloudinaryImageId": "https://images.unsplash.com/photo-1551632436-cbf8dd35adfa"
+      },
+      "cta": {
+        "link": "https://www.swiggy.com/restaurants/cafe-coffee-day-rohini-rest1018",
+        "text": "RESTAURANT_MENU",
+        "type": "WEBLINK"
+      }
+    },
+    {
+      "@type": "type.googleapis.com/swiggy.presentation.food.v2.Restaurant",
+      "info": {
+        "id": "R1019",
+        "name": "Punjabi Dhaba",
+        "locality": "Pitampura",
+        "areaName": "Pitampura",
+        "costForTwo": "₹400 for two",
+        "cuisines": [
+          "North Indian",
+          "Punjabi",
+          "Tandoor",
+          "Thali"
+        ],
+        "avgRating": 4.3,
+        "avgRatingString": "4.3",
+        "totalRatingsString": "6.8K+",
+        "sla": {
+          "deliveryTime": 26,
+          "lastMileTravel": 3.3,
+          "serviceability": "SERVICEABLE",
+          "slaString": "25-30 mins",
+          "lastMileTravelString": "3.3 km"
+        },
+        "availability": {
+          "nextCloseTime": "2026-06-21 00:00:00",
+          "opened": true
+        },
+        "isOpen": true,
+        "type": "F",
+        "aggregatedDiscountInfoV3": {
+          "header": "ITEMS",
+          "subHeader": "AT ₹99"
+        },
+        "cloudinaryImageId": "https://images.unsplash.com/photo-1552566626-52f8b828add9"
+      },
+      "cta": {
+        "link": "https://www.swiggy.com/restaurants/punjabi-dhaba-pitampura-rest1019",
+        "text": "RESTAURANT_MENU",
+        "type": "WEBLINK"
+      }
+    },
+    {
+      "@type": "type.googleapis.com/swiggy.presentation.food.v2.Restaurant",
+      "info": {
+        "id": "R1020",
+        "name": "Box8",
+        "locality": "Sector 2",
+        "areaName": "Rohini",
+        "costForTwo": "₹300 for two",
+        "cuisines": [
+          "North Indian",
+          "South Indian",
+          "Biryani",
+          "Meals"
+        ],
+        "avgRating": 4.1,
+        "avgRatingString": "4.1",
+        "totalRatingsString": "2.9K+",
+        "sla": {
+          "deliveryTime": 22,
+          "lastMileTravel": 2.2,
+          "serviceability": "SERVICEABLE",
+          "slaString": "20-25 mins",
+          "lastMileTravelString": "2.2 km"
+        },
+        "availability": {
+          "nextCloseTime": "2026-06-20 23:30:00",
+          "opened": true
+        },
+        "isOpen": true,
+        "type": "F",
+        "aggregatedDiscountInfoV3": {
+          "header": "40% OFF",
+          "subHeader": "UPTO ₹80"
+        },
+        "cloudinaryImageId": "https://images.unsplash.com/photo-1537047902294-62a40c20a6ae"
+      },
+      "cta": {
+        "link": "https://www.swiggy.com/restaurants/box8-rohini-rest1020",
+        "text": "RESTAURANT_MENU",
+        "type": "WEBLINK"
+      }
+    },
+    {
+      "@type": "type.googleapis.com/swiggy.presentation.food.v2.Restaurant",
+      "info": {
+        "id": "R1021",
+        "name": "Rolls Mania",
+        "locality": "Sector 15",
+        "areaName": "Rohini",
+        "costForTwo": "₹200 for two",
+        "cuisines": [
+          "Rolls",
+          "Wraps",
+          "Fast Food",
+          "Kathi Roll"
+        ],
+        "avgRating": 4.0,
+        "avgRatingString": "4.0",
+        "totalRatingsString": "3.2K+",
+        "sla": {
+          "deliveryTime": 16,
+          "lastMileTravel": 1.5,
+          "serviceability": "SERVICEABLE",
+          "slaString": "15-20 mins",
+          "lastMileTravelString": "1.5 km"
+        },
+        "availability": {
+          "nextCloseTime": "2026-06-20 23:00:00",
+          "opened": true
+        },
+        "isOpen": true,
+        "type": "F",
+        "aggregatedDiscountInfoV3": {
+          "header": "ITEMS",
+          "subHeader": "AT ₹59"
+        },
+        "cloudinaryImageId": "https://images.unsplash.com/photo-1556745750-68295fefafc5"
+      },
+      "cta": {
+        "link": "https://www.swiggy.com/restaurants/rolls-mania-rohini-rest1021",
+        "text": "RESTAURANT_MENU",
+        "type": "WEBLINK"
+      }
+    },
+    {
+      "@type": "type.googleapis.com/swiggy.presentation.food.v2.Restaurant",
+      "info": {
+        "id": "R1022",
+        "name": "Saravana Bhavan",
+        "locality": "Karol Bagh",
+        "areaName": "Karol Bagh",
+        "costForTwo": "₹350 for two",
+        "cuisines": [
+          "South Indian",
+          "Idli",
+          "Dosa",
+          "Vegan"
+        ],
+        "avgRating": 4.5,
+        "avgRatingString": "4.5",
+        "totalRatingsString": "16.7K+",
+        "sla": {
+          "deliveryTime": 30,
+          "lastMileTravel": 4.0,
+          "serviceability": "SERVICEABLE",
+          "slaString": "25-30 mins",
+          "lastMileTravelString": "4.0 km"
+        },
+        "availability": {
+          "nextCloseTime": "2026-06-20 22:00:00",
+          "opened": true
+        },
+        "isOpen": true,
+        "type": "F",
+        "aggregatedDiscountInfoV3": {
+          "header": "ITEMS",
+          "subHeader": "AT ₹79"
+        },
+        "cloudinaryImageId": "https://plus.unsplash.com/premium_photo-1661883237884-263e8de8869b"
+      },
+      "cta": {
+        "link": "https://www.swiggy.com/restaurants/saravana-bhavan-karol-bagh-rest1022",
+        "text": "RESTAURANT_MENU",
+        "type": "WEBLINK"
+      }
+    },
+    {
+      "@type": "type.googleapis.com/swiggy.presentation.food.v2.Restaurant",
+      "info": {
+        "id": "R1023",
+        "name": "Starbucks",
+        "locality": "Sector 4",
+        "areaName": "Rohini",
+        "costForTwo": "₹500 for two",
+        "cuisines": [
+          "Coffee",
+          "Beverages",
+          "Bakery",
+          "Sandwiches"
+        ],
+        "avgRating": 4.4,
+        "avgRatingString": "4.4",
+        "totalRatingsString": "11.8K+",
+        "sla": {
+          "deliveryTime": 18,
+          "lastMileTravel": 1.8,
+          "serviceability": "SERVICEABLE",
+          "slaString": "15-20 mins",
+          "lastMileTravelString": "1.8 km"
+        },
+        "availability": {
+          "nextCloseTime": "2026-06-20 23:00:00",
+          "opened": true
+        },
+        "isOpen": true,
+        "type": "F",
+        "aggregatedDiscountInfoV3": {
+          "header": "ITEMS",
+          "subHeader": "AT ₹199"
+        },
+        "cloudinaryImageId": "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4"
+      },
+      "cta": {
+        "link": "https://www.swiggy.com/restaurants/starbucks-rohini-rest1023",
+        "text": "RESTAURANT_MENU",
+        "type": "WEBLINK"
+      }
+    },
+    {
+      "@type": "type.googleapis.com/swiggy.presentation.food.v2.Restaurant",
+      "info": {
+        "id": "R1024",
+        "name": "Oven Story Pizza",
+        "locality": "Sector 16",
+        "areaName": "Rohini",
+        "costForTwo": "₹400 for two",
+        "cuisines": [
+          "Pizzas",
+          "Italian",
+          "Pastas",
+          "Beverages"
+        ],
+        "avgRating": 4.3,
+        "avgRatingString": "4.3",
+        "totalRatingsString": "4.4K+",
+        "sla": {
+          "deliveryTime": 24,
+          "lastMileTravel": 2.6,
+          "serviceability": "SERVICEABLE",
+          "slaString": "20-25 mins",
+          "lastMileTravelString": "2.6 km"
+        },
+        "availability": {
+          "nextCloseTime": "2026-06-20 23:59:00",
+          "opened": true
+        },
+        "isOpen": true,
+        "type": "F",
+        "aggregatedDiscountInfoV3": {
+          "header": "ITEMS",
+          "subHeader": "AT ₹109"
+        },
+        "cloudinaryImageId": "https://images.unsplash.com/photo-1414235077428-338989a2e8c0"
+      },
+      "cta": {
+        "link": "https://www.swiggy.com/restaurants/oven-story-pizza-rohini-rest1024",
+        "text": "RESTAURANT_MENU",
+        "type": "WEBLINK"
+      }
+    },
+    {
+      "@type": "type.googleapis.com/swiggy.presentation.food.v2.Restaurant",
+      "info": {
+        "id": "R1025",
+        "name": "Lunchbox",
+        "locality": "Sector 17",
+        "areaName": "Rohini",
+        "costForTwo": "₹250 for two",
+        "cuisines": [
+          "North Indian",
+          "Biryani",
+          "Thali",
+          "Curries"
+        ],
+        "avgRating": 4.1,
+        "avgRatingString": "4.1",
+        "totalRatingsString": "2.3K+",
+        "sla": {
+          "deliveryTime": 21,
+          "lastMileTravel": 2.3,
+          "serviceability": "SERVICEABLE",
+          "slaString": "20-25 mins",
+          "lastMileTravelString": "2.3 km"
+        },
+        "availability": {
+          "nextCloseTime": "2026-06-20 22:30:00",
+          "opened": true
+        },
+        "isOpen": true,
+        "type": "F",
+        "aggregatedDiscountInfoV3": {
+          "header": "50% OFF",
+          "subHeader": "UPTO ₹90"
+        },
+        "cloudinaryImageId": "https://plus.unsplash.com/premium_photo-1661953124283-76d0a8436b87"
+      },
+      "cta": {
+        "link": "https://www.swiggy.com/restaurants/lunchbox-rohini-rest1025",
+        "text": "RESTAURANT_MENU",
+        "type": "WEBLINK"
+      }
+    },
+    {
+      "@type": "type.googleapis.com/swiggy.presentation.food.v2.Restaurant",
+      "info": {
+        "id": "R1026",
+        "name": "Baskin Robbins",
+        "locality": "Sector 8",
+        "areaName": "Rohini",
+        "costForTwo": "₹250 for two",
+        "cuisines": [
+          "Ice Cream",
+          "Desserts",
+          "Beverages",
+          "Cakes"
+        ],
+        "avgRating": 4.3,
+        "avgRatingString": "4.3",
+        "totalRatingsString": "4.0K+",
+        "sla": {
+          "deliveryTime": 15,
+          "lastMileTravel": 1.3,
+          "serviceability": "SERVICEABLE",
+          "slaString": "10-15 mins",
+          "lastMileTravelString": "1.3 km"
+        },
+        "availability": {
+          "nextCloseTime": "2026-06-20 23:30:00",
+          "opened": true
+        },
+        "isOpen": true,
+        "type": "F",
+        "aggregatedDiscountInfoV3": {
+          "header": "ITEMS",
+          "subHeader": "AT ₹79"
+        },
+        "cloudinaryImageId": "https://images.unsplash.com/photo-1555396273-367ea4eb4db5"
+      },
+      "cta": {
+        "link": "https://www.swiggy.com/restaurants/baskin-robbins-rohini-rest1026",
+        "text": "RESTAURANT_MENU",
+        "type": "WEBLINK"
+      }
+    },
+    {
+      "@type": "type.googleapis.com/swiggy.presentation.food.v2.Restaurant",
+      "info": {
+        "id": "R1027",
+        "name": "Drunken Monkey",
+        "locality": "Sector 6",
+        "areaName": "Rohini",
+        "costForTwo": "₹200 for two",
+        "cuisines": [
+          "Smoothies",
+          "Juices",
+          "Health Food",
+          "Beverages"
+        ],
+        "avgRating": 4.2,
+        "avgRatingString": "4.2",
+        "totalRatingsString": "1.8K+",
+        "sla": {
+          "deliveryTime": 13,
+          "lastMileTravel": 1.0,
+          "serviceability": "SERVICEABLE",
+          "slaString": "10-15 mins",
+          "lastMileTravelString": "1.0 km"
+        },
+        "availability": {
+          "nextCloseTime": "2026-06-20 22:00:00",
+          "opened": true
+        },
+        "isOpen": true,
+        "type": "F",
+        "aggregatedDiscountInfoV3": {
+          "header": "ITEMS",
+          "subHeader": "AT ₹99"
+        },
+        "cloudinaryImageId": "https://images.unsplash.com/photo-1578474846511-04ba529f0b88"
+      },
+      "cta": {
+        "link": "https://www.swiggy.com/restaurants/drunken-monkey-rohini-rest1027",
+        "text": "RESTAURANT_MENU",
+        "type": "WEBLINK"
+      }
+    },
+    {
+      "@type": "type.googleapis.com/swiggy.presentation.food.v2.Restaurant",
+      "info": {
+        "id": "R1028",
+        "name": "Papa Johns",
+        "locality": "Sector 10",
+        "areaName": "Rohini",
+        "costForTwo": "₹400 for two",
+        "cuisines": [
+          "Pizzas",
+          "Fast Food",
+          "Sides",
+          "Beverages"
+        ],
+        "avgRating": 4.2,
+        "avgRatingString": "4.2",
+        "totalRatingsString": "3.6K+",
+        "sla": {
+          "deliveryTime": 22,
+          "lastMileTravel": 2.1,
+          "serviceability": "SERVICEABLE",
+          "slaString": "20-25 mins",
+          "lastMileTravelString": "2.1 km"
+        },
+        "availability": {
+          "nextCloseTime": "2026-06-21 00:00:00",
+          "opened": true
+        },
+        "isOpen": true,
+        "type": "F",
+        "aggregatedDiscountInfoV3": {
+          "header": "30% OFF",
+          "subHeader": "UPTO ₹100"
+        },
+        "cloudinaryImageId": "https://images.unsplash.com/photo-1556742205-e10c9486e506"
+      },
+      "cta": {
+        "link": "https://www.swiggy.com/restaurants/papa-johns-rohini-rest1028",
+        "text": "RESTAURANT_MENU",
+        "type": "WEBLINK"
+      }
+    },
+    {
+      "@type": "type.googleapis.com/swiggy.presentation.food.v2.Restaurant",
+      "info": {
+        "id": "R1029",
+        "name": "Goli Vada Pav",
+        "locality": "Sector 18",
+        "areaName": "Rohini",
+        "costForTwo": "₹100 for two",
+        "cuisines": [
+          "Street Food",
+          "Maharashtrian",
+          "Snacks",
+          "Fast Food"
+        ],
+        "avgRating": 3.8,
+        "avgRatingString": "3.8",
+        "totalRatingsString": "1.4K+",
+        "sla": {
+          "deliveryTime": 12,
+          "lastMileTravel": 0.8,
+          "serviceability": "SERVICEABLE",
+          "slaString": "10-15 mins",
+          "lastMileTravelString": "0.8 km"
+        },
+        "availability": {
+          "nextCloseTime": "2026-06-20 21:30:00",
+          "opened": true
+        },
+        "isOpen": true,
+        "type": "F",
+        "aggregatedDiscountInfoV3": {
+          "header": "ITEMS",
+          "subHeader": "AT ₹19"
+        },
+        "cloudinaryImageId": "https://plus.unsplash.com/premium_photo-1673108852141-e8c3c22a4a22"
+      },
+      "cta": {
+        "link": "https://www.swiggy.com/restaurants/goli-vada-pav-rohini-rest1029",
+        "text": "RESTAURANT_MENU",
+        "type": "WEBLINK"
+      }
+    },
+    {
+      "@type": "type.googleapis.com/swiggy.presentation.food.v2.Restaurant",
+      "info": {
+        "id": "R1030",
+        "name": "Burger Singh",
+        "locality": "Sector 11",
+        "areaName": "Rohini",
+        "costForTwo": "₹300 for two",
+        "cuisines": [
+          "Burgers",
+          "Indian Fast Food",
+          "Fries",
+          "Beverages"
+        ],
+        "avgRating": 4.1,
+        "avgRatingString": "4.1",
+        "totalRatingsString": "5.2K+",
+        "sla": {
+          "deliveryTime": 19,
+          "lastMileTravel": 2.0,
+          "serviceability": "SERVICEABLE",
+          "slaString": "15-20 mins",
+          "lastMileTravelString": "2.0 km"
+        },
+        "availability": {
+          "nextCloseTime": "2026-06-21 00:00:00",
+          "opened": true
+        },
+        "isOpen": true,
+        "type": "F",
+        "aggregatedDiscountInfoV3": {
+          "header": "ITEMS",
+          "subHeader": "AT ₹79"
+        },
+        "cloudinaryImageId": "https://images.unsplash.com/photo-1466978913421-dad2ebd01d17"
+      },
+      "cta": {
+        "link": "https://www.swiggy.com/restaurants/burger-singh-rohini-rest1030",
+        "text": "RESTAURANT_MENU",
+        "type": "WEBLINK"
+      }
+    },
+    {
+      "@type": "type.googleapis.com/swiggy.presentation.food.v2.Restaurant",
+      "info": {
+        "id": "R1031",
+        "name": "Paradise Biryani",
+        "locality": "Sector 3",
+        "areaName": "Rohini",
+        "costForTwo": "₹500 for two",
+        "cuisines": [
+          "Biryani",
+          "Hyderabadi",
+          "Haleem",
+          "Kebabs"
+        ],
+        "avgRating": 4.5,
+        "avgRatingString": "4.5",
+        "totalRatingsString": "15.9K+",
+        "sla": {
+          "deliveryTime": 29,
+          "lastMileTravel": 3.5,
+          "serviceability": "SERVICEABLE",
+          "slaString": "25-30 mins",
+          "lastMileTravelString": "3.5 km"
+        },
+        "availability": {
+          "nextCloseTime": "2026-06-21 00:00:00",
+          "opened": true
+        },
+        "isOpen": true,
+        "type": "F",
+        "aggregatedDiscountInfoV3": {
+          "header": "ITEMS",
+          "subHeader": "AT ₹159"
+        },
+        "cloudinaryImageId": "https://images.unsplash.com/photo-1514933651103-005eec06c04b"
+      },
+      "cta": {
+        "link": "https://www.swiggy.com/restaurants/paradise-biryani-rohini-rest1031",
+        "text": "RESTAURANT_MENU",
+        "type": "WEBLINK"
+      }
+    },
+    {
+      "@type": "type.googleapis.com/swiggy.presentation.food.v2.Restaurant",
+      "info": {
+        "id": "R1032",
+        "name": "Meghana Foods",
+        "locality": "Sector 7",
+        "areaName": "Rohini",
+        "costForTwo": "₹550 for two",
+        "cuisines": [
+          "Andhra",
+          "Biryani",
+          "South Indian",
+          "Seafood"
+        ],
+        "avgRating": 4.6,
+        "avgRatingString": "4.6",
+        "totalRatingsString": "8.7K+",
+        "sla": {
+          "deliveryTime": 33,
+          "lastMileTravel": 3.9,
+          "serviceability": "SERVICEABLE",
+          "slaString": "30-35 mins",
+          "lastMileTravelString": "3.9 km"
+        },
+        "availability": {
+          "nextCloseTime": "2026-06-21 00:30:00",
+          "opened": true
+        },
+        "isOpen": true,
+        "type": "F",
+        "aggregatedDiscountInfoV3": {
+          "header": "ITEMS",
+          "subHeader": "AT ₹169"
+        },
+        "cloudinaryImageId": "https://images.unsplash.com/photo-1592861956120-e524fc739696"
+      },
+      "cta": {
+        "link": "https://www.swiggy.com/restaurants/meghana-foods-rohini-rest1032",
+        "text": "RESTAURANT_MENU",
+        "type": "WEBLINK"
+      }
+    }
+  ]
+}

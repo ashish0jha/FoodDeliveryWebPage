@@ -10,7 +10,6 @@ const Cart=()=>{
     const clickHandler=()=>{
         dispatch(clearCart());
     }
-
     return(
         <div className="flex flex-col items-center">
             <h1 className="mb-8 p-5 font-extrabold text-xl m-4 ">Cart</h1>
@@ -24,12 +23,12 @@ const Cart=()=>{
                 </button>
                 <div className="text-xl font-bold m-5">
                     Total cost : ₹{cartItems.reduce((total, item) => {
-                        const price = item.card.info.defaultPrice ? item.card.info.defaultPrice : item.card.info.price;
+                        const price = item.price;
                         return total + (price || 0);
-                    }, 0) / 100}
+                    }, 0)}
                 </div>
             </div>
-            
+            <a href="/" className="text-gray-400 hover:underline">Cart is Empty</a>
             <CartItem menuPart={cartItems} />
             
         </div>

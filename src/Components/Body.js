@@ -3,6 +3,7 @@ import { useState , useEffect,useContext} from "react";
 import Shimmer from "./Shimmer";
 import {Link} from "react-router";
 import onlineStatus from "../utils/useonlinestatus";
+import data from "../utils/restaurent.json"
 
 let resiii;
 
@@ -19,37 +20,14 @@ const Body=()=>{
 
     const isOnline=onlineStatus();
 
+    const tot = data.restaurants ;
+    resiii=tot;
+    const fetchData = ()=>{
+        SetResList(tot);
+    }
     useEffect(()=>{
         fetchData();
     },[])
-
-    const fetchData=async ()=>{
-        const Data=await fetch("https://proxy.cors.sh/https://www.swiggy.com/dapi/restaurants/list/v5?lat=28.7040592&lng=77.10249019999999&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING",{
-            headers:{
-                'x-cors-api-key':"temp_a09aeb4da8968b2402cf6a9e6253ecb1"
-            }
-        });
-
-        const json=await Data.json();
-
-        const findRestaurants = (obj) => {
-            if (obj && typeof obj === 'object') {
-                if (obj.hasOwnProperty('restaurants')) {
-                    return obj.restaurants;
-                }
-                for (let key in obj) {
-                    const result = findRestaurants(obj[key]);
-                    if (result) return result;
-                }
-            }
-            return null;
-        };
-
-        const tot = findRestaurants(json);
-        resiii=tot;
-        SetResList(tot);
-
-    }
 
     if(ResList.length===0){
         return <Shimmer/>

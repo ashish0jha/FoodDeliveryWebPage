@@ -1,25 +1,20 @@
-import {useState,useEffect} from "react";
+import { useEffect, useState } from "react";
+import restaurantData from "./restaurantData.json";
 
-const useRestaurantMenu=(resId)=>{
-    
-    const [MenuData,setMenuData]=useState(null);
+// Returns flat restaurant object: { id, name, avgRating, totalRatings,
+// costForTwo, cuisines, areaName, deliveryTime, image, menu: [{category, items: [...]}] }
+const useRestaurantMenu = (resId) => {
+  const [restaurant, setRestaurant] = useState(null);
 
-    useEffect(()=>{
-        fetchData(); 
-    },[]);
+  useEffect(() => {
+    // simulate async fetch so Shimmer still shows briefly
+    const timer = setTimeout(() => {
+      setRestaurant(restaurantData[resId] || null);
+    }, 300);
+    return () => clearTimeout(timer);
+  }, [resId]);
 
-    const fetchData=async ()=>{
-        const data=await fetch(
-            "https://proxy.cors.sh/https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=28.7040592&lng=77.10249019999999&restaurantId="+resId+"&catalog_qa=undefined&submitAction=ENTER",{
-                 headers:{
-                    'x-cors-api-key':"temp_a09aeb4da8968b2402cf6a9e6253ecb1"
-                }
-            });
+  return restaurant;
+};
 
-        const json=await data.json();
-
-        setMenuData(json);
-    }
-    return MenuData;
-}
 export default useRestaurantMenu;

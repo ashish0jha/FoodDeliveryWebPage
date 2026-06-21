@@ -98,7 +98,7 @@ const Cards3=({Res})=>{
 
     return(
         <div className='w-70 h-75 my-1.25 mx-2.5 hover:shadow-2xl rounded-4xl hover:scale-105 duration-300'>
-            <img className="w-70 h-43 rounded-4xl " src={CDN_Link + Res.info.cloudinaryImageId}/>
+            <img className="w-70 h-43 rounded-4xl " src={Res.info.cloudinaryImageId}/>
             <div className='pl-5'>
                 <h3 className="font-extrabold">{name}</h3>
                 <div className="flex items-center">
