@@ -1,36 +1,39 @@
 import { useSelector } from "react-redux";
 import CartItem from "./CartItem";
-import {clearCart} from "../utils/CartSlice";
+import { clearCart } from "../utils/CartSlice";
 import { useDispatch } from "react-redux";
 
-const Cart=()=>{
+const Cart = () => {
 
-    const cartItems=useSelector((store)=>store.cart.items);
-    const dispatch=useDispatch();
-    const clickHandler=()=>{
+    const cartItems = useSelector((store) => store.cart.items);
+    const dispatch = useDispatch();
+    const clickHandler = () => {
         dispatch(clearCart());
     }
-    return(
-        <div className="flex flex-col items-center">
-            <h1 className="mb-8 p-5 font-extrabold text-xl m-4 ">Cart</h1>
-            
-            
-            <div className="flex justify-between items-center">
-                <button
-                    className="border border-black p-2 m-5 bg-black text-white rounded-lg font-bold cursor-pointer"
+    return (
+        <div className="flex flex-col items-center bg-[#15201A] min-h-screen px-4">
+            <h1 className="font-bold text-2xl md:text-3xl m-4 text-[#EAF7EE]">Cart</h1>
+
+            <div className="flex flex-col md:flex-row justify-between items-center gap-3 md:gap-0 w-full md:w-auto">
+                {cartItems.length == 0 ? <a href="/"
+                    className="border border-[#1B5230] p-2 m-2 md:m-5 bg-[#27D673] text-[#06250F] rounded-lg font-bold cursor-pointer hover:bg-[#3CE585]"
+                    onClick={clickHandler}>
+                    Explore Restaurents
+                </a> : <button
+                    className="border border-[#1B5230] p-2 m-2 md:m-5 bg-[#27D673] text-[#06250F] rounded-lg font-bold cursor-pointer hover:bg-[#3CE585]"
                     onClick={clickHandler}>
                     Clear Cart
-                </button>
-                <div className="text-xl font-bold m-5">
+                </button>}
+                <div className="text-lg md:text-xl font-bold m-2 md:m-5 text-[#EAF7EE]">
                     Total cost : ₹{cartItems.reduce((total, item) => {
                         const price = item.price;
                         return total + (price || 0);
                     }, 0)}
                 </div>
             </div>
-            {cartItems.length==0 ? (<a href="/" className="text-gray-400 hover:underline">Cart is Empty</a>) : ""}
+            {cartItems.length == 0 ? (<a href="/" className="text-[#8FBE9F] hover:underline hover:text-[#27D673]">Cart is Empty</a>) : ""}
             <CartItem menuPart={cartItems} />
-            
+
         </div>
     )
 }

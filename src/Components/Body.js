@@ -43,90 +43,82 @@ const Body=()=>{
         )
     }
     return(
-        <div>
-            <div className="flex items-center justify-evenly">
-            
-                <div className="px-5 h-7.5 rounded-lg bg cursor-pointer border-2 border-black hover:text-white hover:bg-black">Restaurent count : {ResList.length}</div>
-                
-                <div className='search-bar'>
+        <div className="min-h-screen bg-[#15201A] p-4">
 
-                    <input type="text" placeholder='Enter Food-Items' className='h-10 m-4 w-75 px-3 shadow-2xl outline-0 border-1 border-[#ccc] hover:shadow-2xl rounded-4xl hover:scale-105 duration-300'
-                        value={searchText}
-                        onChange={(e)=>{
-                            setsearchText(e.target.value);
-                        }}
-                        onKeyDown={(e)=>{
-                            if(e.key==="Enter"){
-                                const filteredData=resiii.filter((resty)=>(
-                                    resty.info.name.toLowerCase().includes(searchText.toLowerCase())
-                                ));
-                                if(filteredData.length===0){
-                                    setTimeout(() => {
-                                        setmsg("");
-                                    }, 2000);
-                                    setmsg("No Restaurent Found !!");
-                                }else{
-                                    SetResList(filteredData);
-                                    setbtnname("Show All Restaurants");
-                                    setmsg("")
-                                }
-                            }
-                        }}
-                    />
+    <div className="sticky top-0 z-20 mx-2 md:mx-35 mt-4 mb-2 rounded-3xl bg-[#123B22] border border-[#1B5230] shadow-lg px-4 md:px-6 py-4">
+        <div className="flex flex-col md:flex-row items-center justify-evenly gap-3 md:gap-4">
 
-                </div>
-                {/* <div>
-                    <label>
-                        UserName : 
-                    </label>
-                    <input 
-                        className="border-2 border-black rounded-lg pl-2"
-                        type="text"
-                        value={LoggedIn}
-                        onChange={(e)=>setUserName(e.target.value)}
-                    />
-                </div> */}
-                <div>
-                    <button className="px-5 h-7.5 rounded-lg bg cursor-pointer border-2 border-black hover:text-white hover:bg-black"
-                    onClick={()=>{
-                        const filteredData = ResList.filter((resty)=>
-                        (
-                            resty.info.avgRating>4.2
-                        ))
-
-                        setbtnname(btnName==="Top Rated Restaurant" ? "Show All Restaurants" : "Top Rated Restaurant")
-
-                        if(btnName==="Show All Restaurants"){
-                        SetResList(resiii)
-                        }else{
-                        SetResList(filteredData);
-                        }
-                        
-                    }}>{btnName}</button>
-                </div>
+            <div className="px-4 md:px-5 py-2 rounded-2xl font-semibold text-xs md:text-sm cursor-pointer
+                bg-[#27D673] text-[#06250F]
+                hover:bg-[#3CE585] hover:scale-105
+                transition-all duration-300 w-full md:w-auto text-center">
+                🍽️ Restaurant count : {ResList.length}
             </div>
-            
-            <h3 className="m-5 text-center">{msg}</h3>
-            <div className="flex flex-wrap justify-center my-4 gap-8 ">
-                {/* <ResCard/>
-                <Cards TextOnimg="Kuchh bhi" ResName="Adil Hotel" RateTime="4.4 , 35 -40 mins" Cuisines="Biryani,tandoor,chhindwara Locality" />
-                <Cards1 TextOnimg="100 F ABOVE 999" ResName="Gupta Bhojnalay" RateTime="4.1 , 35 -40 mins" Cuisines="Fast Food,Indian, Beverages" />
-                <Cards2  Res={restaurants[0]} /> */}
 
-                {
-                    ResList.map((resty)=>
-                    (
-                        <Link  key={resty.info.id} to={`/Restaurant/${resty.info.id}`}>
-                            <Cards3 Res={resty}/>
-                        </Link> 
-                    ))
-                }
-                
+            <div className='search-bar relative w-full md:w-auto'>
+                <input type="text" placeholder='Enter Food-Items'
+                    className='h-10 md:h-11 w-full md:w-72 px-4 md:px-5 pr-10 text-sm text-[#EAF7EE]
+                        bg-[#0E2A18] border border-[#1B5230]
+                        rounded-full outline-none
+                        focus:ring-2 focus:ring-[#27D673]/60 focus:border-[#27D673]
+                        hover:border-[#27D673]/50 hover:scale-[1.02] md:hover:scale-[1.03]
+                        transition-all duration-300 placeholder:text-[#8FBE9F]'
+                    value={searchText}
+                    onChange={(e)=>{ setsearchText(e.target.value); }}
+                    onKeyDown={(e)=>{
+                        if(e.key==="Enter"){
+                            const filteredData=resiii.filter((resty)=>(
+                                resty.info.name.toLowerCase().includes(searchText.toLowerCase())
+                            ));
+                            if(filteredData.length===0){
+                                setTimeout(() => { setmsg(""); }, 2000);
+                                setmsg("No Restaurent Found !!");
+                            }else{
+                                SetResList(filteredData);
+                                setbtnname("Show All Restaurants");
+                                setmsg("")
+                            }
+                        }
+                    }}
+                />
+                <span className="absolute right-4 top-1/2 -translate-y-1/2 text-[#27D673] text-base pointer-events-none">
+                    🔍
+                </span>
+            </div>
 
-                {/* {ResCard2('Hotel Sai Nath','175 OFF ABOVE 699','4.2 , 35-40 mins' , 'North Indian, South Indian')}
-                {ResCard2('Raimens Cafe 79','df','4.4 , 45-50 mins','Bakery,Pizzas,Snakes')} */}
+            <div className="w-full md:w-auto">
+                <button className="w-full md:w-auto px-5 md:px-6 py-2 rounded-2xl font-semibold text-xs md:text-sm cursor-pointer
+                    text-[#8FBE9F] bg-[#0E2A18] border border-[#1B5230]
+                    hover:text-[#06250F] hover:bg-[#27D673] hover:border-[#27D673]
+                    hover:scale-105
+                    transition-all duration-300"
+                onClick={()=>{
+                    const filteredData = ResList.filter((resty)=> (resty.info.avgRating>4.2))
+                    setbtnname(btnName==="Top Rated Restaurant" ? "Show All Restaurants" : "Top Rated Restaurant")
+                    if(btnName==="Show All Restaurants"){
+                    SetResList(resiii)
+                    }else{
+                    SetResList(filteredData);
+                    }
+                }}>{btnName==="Top Rated Restaurant" ? "⭐ " : "📋 "}{btnName}</button>
             </div>
         </div>
+    </div>
+
+    <h3 className="m-5 text-center text-sm md:text-base font-semibold text-[#27D673] animate-pulse">{msg}</h3>
+
+    {/* Cards Grid */}
+    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-[repeat(auto-fill,280px)] justify-center gap-5 md:gap-7 px-4 md:px-6 py-6">
+        {
+            ResList.map((resty)=>
+            (
+                <Link key={resty.info.id} to={`/Restaurant/${resty.info.id}`}>
+                    <Cards3 Res={resty}/>
+                </Link> 
+            ))
+        }
+    </div>
+</div>
     )
 }
 

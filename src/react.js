@@ -24,29 +24,11 @@ const MainApp=()=>{
                     <Header/>
                     <Outlet/>
                 </div>
-
             </UserContext.Provider>
         </Provider>
         
     )
 }
-    
-
-// const AppRouter=createBrowserRouter([
-//     {
-//         path:"/",
-//         element:<MainApp/>,
-//         errorElement:<Error/>,
-//     },
-//     {
-//         path:"/About",
-//         element:<About/>
-//     },
-//     {
-//         path:"/Contact",
-//         element:<Contact/>
-//     }
-// ])
 
 //creating Children Routes
 const AppRouter=createBrowserRouter([

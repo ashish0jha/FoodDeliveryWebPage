@@ -97,15 +97,15 @@ const Cards3=({Res})=>{
     const data=useContext(UserContext);
 
     return(
-        <div className='w-70 h-75 my-1.25 mx-2.5 hover:shadow-2xl rounded-4xl hover:scale-105 duration-300'>
-            <img className="w-70 h-43 rounded-4xl " src={Res.info.cloudinaryImageId}/>
+        <div className='w-full md:w-70 h-75 my-1.25 mx-auto md:mx-2.5 hover:shadow-2xl rounded-4xl hover:scale-105 duration-300 bg-[#123B22] border border-[#1B5230]'>
+            <img className="w-full md:w-70 h-43 rounded-4xl object-cover" src={Res.info.cloudinaryImageId}/>
             <div className='pl-5'>
-                <h3 className="font-extrabold">{name}</h3>
+                <h3 className="font-extrabold text-[#EAF7EE]">{name}</h3>
                 <div className="flex items-center">
-                    <h3 className="px-1.25 bg-black rounded-lg text-white"><span className="text-amber-300">★ </span>{avgRating} </h3>
-                    <h3>. {sla.slaString}</h3>
+                    <h3 className="px-1.25 bg-[#0E2A18] rounded-lg text-[#27D673]"><span className="text-amber-300">★ </span>{avgRating} </h3>
+                    <h3 className="text-[#8FBE9F]">. {sla.slaString}</h3>
                 </div> 
-                <p>{cuisines.join(",")}</p>
+                <p className="text-[#8FBE9F]">{cuisines.join(",")}</p>
             </div>
         </div>
     )
