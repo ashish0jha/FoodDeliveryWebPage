@@ -15,9 +15,11 @@ const Header=()=>{
     const [logInName,setlogInName]=useState("");
 
     return(
-       <div className="sticky top-0 z-50 flex justify-between shadow-xl items-center h-[70px] md:h-[100px] bg-[#15201A] border-b border-[#1B5230] w-full px-3 md:px-0">
+       <div className="sticky top-0 z-50 flex justify-between shadow-xl items-center h-[70px] md:h-[100px] bg-[#15201A] border-b border-[#1B5230] w-full px-3 md:px-0 cursor-pointer">
             <div className='LogoPart pl-2 md:pl-5'>
-                <img className="w-16 md:w-25" src={LOGO_Link} alt="Logo" />
+                <a href="/">
+                    <img className="w-16 md:w-25" src={LOGO_Link} alt="Logo" />
+                </a>
             </div> 
             <div className='nav-items overflow-x-auto'>
                 <ul className="flex items-center mx-2 md:mx-5 gap-3 md:gap-10 text-sm md:text-2xl font-semibold whitespace-nowrap">
