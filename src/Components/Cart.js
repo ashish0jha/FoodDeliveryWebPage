@@ -28,7 +28,7 @@ const Cart=()=>{
                     }, 0)}
                 </div>
             </div>
-            <a href="/" className="text-gray-400 hover:underline">Cart is Empty</a>
+            {cartItems.length==0 ? (<a href="/" className="text-gray-400 hover:underline">Cart is Empty</a>) : ""}
             <CartItem menuPart={cartItems} />
             
         </div>

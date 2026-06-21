@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useParams } from "react-router";
 import Shimmer from "./Shimmer";
-import useRestaurantMenu from "../utils/useRestaurantMenu";
+import useRestaurantMenu from "../utils/userestaurantMenu";
 import Accordian from "./Accordian";
 
 const IndividualRes = () => {
