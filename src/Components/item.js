@@ -1,4 +1,4 @@
-import { addItem } from "../utils/CartSlice";
+import { addItem, addItemsQuantity } from "../utils/CartSlice";
 import { useDispatch } from "react-redux";
 import AddedToCart from "./AddedToCart";
 import { useState } from "react";
@@ -49,8 +49,15 @@ const Item = (({ items }) => {
                             />
 
                             <button className="hover:bg-[#27D673] hover:text-[#06250F] w-20 md:w-30 h-7 md:h-9.5 rounded-2xl outline-0 shadow-2xl text-[#27D673] text-xs md:text-base font-extrabold bg-[#0E2A18] border border-[#1B5230] -translate-y-3 md:-translate-y-5 translate-x-2 md:translate-x-5 cursor-pointer"
-                                onClick={() => clickHandler(item)
-                                }>ADD+</button>
+                                onClick={() =>{
+                                    if(item?.qty >= 1){
+                                        let newQty = item?.qty + 1;
+                                        dispatch(addItemsQuantity({quantity:newQty, id}))
+                                    }else{
+                                        item.qty=1;
+                                        clickHandler(item)
+                                    } 
+                                }}>ADD+</button>
                         </div>
 
                     </div>

@@ -6,6 +6,7 @@ import { useDispatch } from "react-redux";
 const Cart = () => {
 
     const cartItems = useSelector((store) => store.cart.items);
+    
     const dispatch = useDispatch();
     const clickHandler = () => {
         dispatch(clearCart());
@@ -27,7 +28,9 @@ const Cart = () => {
                 <div className="text-lg md:text-xl font-bold m-2 md:m-5 text-[#EAF7EE]">
                     Total cost : ₹{cartItems.reduce((total, item) => {
                         const price = item.price;
-                        return total + (price || 0);
+                        let qty = item.qty;
+                        if(qty<0) qty=0;
+                        return total + (price*qty || 0);
                     }, 0)}
                 </div>
             </div>
