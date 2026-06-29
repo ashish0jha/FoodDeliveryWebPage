@@ -1,6 +1,45 @@
 import { CDN_Link } from "../utils/links";
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import UserContext from "../utils/UserContext";
+
+//Destructuring 
+const Cards3=({Res})=>{
+    const [imgLoaded, setImgLoaded] = useState(false);
+    const {name,rating,timeToReach,cuisines,imageId}=Res;
+
+    const data=useContext(UserContext);
+
+    return(
+        <div className='w-full md:w-70 h-75 my-1.25 mx-auto md:mx-2.5 hover:shadow-2xl rounded-4xl hover:scale-105 duration-300 bg-[#123B22] border border-[#1B5230] overflow-hidden'>
+            <div className="w-full h-43 bg-[#0E2A18] relative">
+                <img
+                    className={`w-full h-43 rounded-4xl object-cover transition-opacity duration-500 ${
+                        imgLoaded ? "opacity-100" : "opacity-0"
+                    }`}
+                    src={imageId}
+                    loading="lazy"
+                    onLoad={()=> setImgLoaded(true)}
+                />
+            </div> 
+            <div className='pl-5'>
+                <h3 className="font-extrabold text-[#EAF7EE]">{name}</h3>
+                <div className="flex items-center">
+                    <h3 className="px-1.25 bg-[#0E2A18] rounded-lg text-[#27D673]"><span className="text-amber-300">★ </span>{rating} </h3>
+                    <h3 className="text-[#8FBE9F]">. {timeToReach}</h3>
+                </div> 
+                <p className="text-[#8FBE9F]">{cuisines.join(",")}</p>
+            </div>
+        </div>
+    )
+}
+
+export default Cards3;
+
+
+
+
+
+
 
 // const ResCard=()=>(
 //     <div className='res-card'>
@@ -90,27 +129,6 @@ import UserContext from "../utils/UserContext";
 //         </div>
 //     )
 // }
-//Destructuring 
-const Cards3=({Res})=>{
-    const {name,avgRating,sla,cuisines}=Res.info;
-
-    const data=useContext(UserContext);
-
-    return(
-        <div className='w-full md:w-70 h-75 my-1.25 mx-auto md:mx-2.5 hover:shadow-2xl rounded-4xl hover:scale-105 duration-300 bg-[#123B22] border border-[#1B5230]'>
-            <img className="w-full md:w-70 h-43 rounded-4xl object-cover" src={Res.info.cloudinaryImageId}/>
-            <div className='pl-5'>
-                <h3 className="font-extrabold text-[#EAF7EE]">{name}</h3>
-                <div className="flex items-center">
-                    <h3 className="px-1.25 bg-[#0E2A18] rounded-lg text-[#27D673]"><span className="text-amber-300">★ </span>{avgRating} </h3>
-                    <h3 className="text-[#8FBE9F]">. {sla.slaString}</h3>
-                </div> 
-                <p className="text-[#8FBE9F]">{cuisines.join(",")}</p>
-            </div>
-        </div>
-    )
-}
-
 //Higher Order Function
 // export const close=(cards3)=>{
 //     return (props)=>{
@@ -132,5 +150,3 @@ const Cards3=({Res})=>{
 //         )
 //     }
 // }
-
-export default Cards3;

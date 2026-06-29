@@ -19,3 +19,11 @@
 .animate-blob1 { animation: blob1 14s ease-in-out infinite; }
 .animate-blob2 { animation: blob2 18s ease-in-out infinite; }
 .animate-blob3 { animation: blob3 22s ease-in-out infinite; }
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+.animate-fadeIn {
+    animation: fadeIn 0.4s ease-out;
+}

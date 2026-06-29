@@ -1,48 +1,37 @@
 import Cards3 from "./Card3";
-import { useState , useEffect,useContext} from "react";
+import { useState, useEffect, useContext } from "react";
 import Shimmer from "./Shimmer";
-import {Link} from "react-router";
+import { Link } from "react-router-dom";
 import onlineStatus from "../utils/useonlinestatus";
-import data from "../utils/restaurent.json"
+import axios from "axios";
+import { baseUrl } from "../utils/constants";
+import useRestaurants from "../utils/useRestra";
 
 let resiii;
 
-const Body=()=>{
-    const [ResList , SetResList]=useState([]);
+const Body = () => {
+    const [btnName, setbtnname] = useState("Top Rated Restaurant");
+    const [searchText, setsearchText] = useState("");
+    const [msg, setmsg] = useState("");
+    const isOnline = onlineStatus();
 
-    const [btnName,setbtnname]=useState("Top Rated Restaurant");
+    const { ResList, setResList, loading, error, hasMore, lastCardRef } = useRestaurants();
+    resiii = ResList;
 
-    const [searchText,setsearchText]=useState("");
-
-    const [msg,setmsg]=useState("");
-
-    const [baks,setbaks]=useState("");
-
-    const isOnline=onlineStatus();
-
-    const tot = data.restaurants ;
-    resiii=tot;
-    const fetchData = ()=>{
-        SetResList(tot);
+    if (ResList.length === 0) {
+        return <Shimmer />
     }
-    useEffect(()=>{
-        fetchData();
-    },[])
 
-    if(ResList.length===0){
-        return <Shimmer/>
-    }
-    
-    if(!isOnline){
-        return(
+    if (!isOnline) {
+        return (
             <div>
                 <h1 className="flex justify-center text-4xl items-center">🔴 Offline , Please check your internet connection!!</h1>
             </div>
-            
         )
     }
-    return(
+    return (
         <div className="min-h-screen bg-[#15201A] p-4 scroll-smooth">
+            {error && <p>{error}</p>}
 
             <div className="sticky top-0 z-20 mx-2 md:mx-35 mt-4 mb-2 rounded-3xl bg-[#123B22] border border-[#1B5230] shadow-lg px-4 md:px-6 py-4">
                 <div className="flex flex-col md:flex-row items-center justify-evenly gap-3 md:gap-4">
@@ -63,22 +52,22 @@ const Body=()=>{
                                 hover:border-[#27D673]/50 hover:scale-[1.02] md:hover:scale-[1.03]
                                 transition-all duration-300 placeholder:text-[#8FBE9F]'
                             value={searchText}
-                            onChange={(e)=>{ setsearchText(e.target.value); }}
-                            onKeyDown={(e)=>{
+                            onChange={(e) => { setsearchText(e.target.value); }}
+                            onKeyDown={(e) => {
                                 const key = e.target.value;
-                                if((key>='a' && key<='z') || (key>='A' && key<='Z') || key==='Enter'){
-                                    const filteredData=resiii.filter((resty)=>{
+                                if ((key >= 'a' && key <= 'z') || (key >= 'A' && key <= 'Z') || key === 'Enter') {
+                                    const filteredData = resiii.filter((resty) => {
                                         let data = "";
-                                        for(let item of resty.info.cuisines){
-                                            data+=item;
+                                        for (let item of resty.cuisines) {
+                                            data += item;
                                         }
                                         return data.toLowerCase().includes(searchText.toLowerCase());
                                     });
-                                    if(filteredData.length===0){
+                                    if (filteredData.length === 0) {
                                         setmsg("No Restaurent Found !!");
-                                        setTimeout(() => { setmsg(""); }, 2000); 
-                                    }else{
-                                        SetResList(filteredData);
+                                        setTimeout(() => { setmsg(""); }, 2000);
+                                    } else {
+                                        setResList(filteredData);
                                         setbtnname("Show All Restaurants");
                                         setmsg("")
                                     }
@@ -96,15 +85,15 @@ const Body=()=>{
                             hover:text-[#06250F] hover:bg-[#27D673] hover:border-[#27D673]
                             hover:scale-105
                             transition-all duration-300"
-                        onClick={()=>{
-                            const filteredData = ResList.filter((resty)=> (resty.info.avgRating>4.2))
-                            setbtnname(btnName==="Top Rated Restaurant" ? "Show All Restaurants" : "Top Rated Restaurant")
-                            if(btnName==="Show All Restaurants"){
-                            SetResList(resiii)
-                            }else{
-                            SetResList(filteredData);
-                            }
-                        }}>{btnName==="Top Rated Restaurant" ? "⭐ " : "📋 "}{btnName}</button>
+                            onClick={() => {
+                                const filteredData = ResList.filter((resty) => (resty.rating > 4.2))
+                                setbtnname(btnName === "Top Rated Restaurant" ? "Show All Restaurants" : "Top Rated Restaurant")
+                                if (btnName === "Show All Restaurants") {
+                                    setResList(resiii)
+                                } else {
+                                    setResList(filteredData);
+                                }
+                            }}>{btnName === "Top Rated Restaurant" ? "⭐ " : "📋 "}{btnName}</button>
                     </div>
                 </div>
             </div>
@@ -113,13 +102,25 @@ const Body=()=>{
 
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-[repeat(auto-fill,280px)] justify-center gap-5 md:gap-7 px-4 md:px-6 py-6">
                 {
-                    ResList.map((resty)=>
-                    (
-                        <Link key={resty.info.id} to={`/Restaurant/${resty.info.id}`}>
-                            <Cards3 Res={resty}/>
-                        </Link> 
-                    ))
+                    ResList.map((resty, index) => {
+                        const isLast = index === ResList.length - 1;
+                        return (
+                            <div key={index} ref={isLast ? lastCardRef : null} className="animate-fadeIn">
+                                <Link to={`/Restaurant/${resty.resId}`} >
+                                    <Cards3 Res={resty} />
+                                </Link>
+                            </div>
+                        )
+                    })
                 }
+            </div>
+            <div className="h-10 flex items-center justify-center">
+                {loading && (
+                    <p className="text-center text-[#27D673] animate-pulse">Loading more...</p>
+                )}
+                {!hasMore && ResList.length > 0 && (
+                    <p className="text-center text-[#8FBE9F]">You've reached the end 🍃</p>
+                )}
             </div>
         </div>
     )

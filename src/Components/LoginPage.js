@@ -1,0 +1,112 @@
+import { useContext, useState } from "react";
+import { useNavigate } from "react-router-dom";
+import UserContext from "../utils/UserContext";
+import axios from "axios";
+import { baseUrl } from "../utils/constants";
+
+const LoginPage = () => {
+  const [isLogin, setIsLogin] = useState(true);
+  const navigate = useNavigate();
+
+  const [fullName, setFullName] = useState("");
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+
+  const { LoggedIn , setUserName } = useContext(UserContext);
+
+  const loginHandler = async ()=>{
+    try{
+      const res = await axios.post(baseUrl + "/signup",{
+        fullName,
+        email,
+        password
+      },{withCredentials:true});
+      console.log(res.data);
+    }
+    catch(err){
+      console.error("ERROR : "+err.message);
+    }
+  }
+
+  return (
+    <div className="min-h-screen flex items-center justify-center bg-[#15201A] px-4">
+      <div className="w-full max-w-md bg-[#123B22] border border-[#1B5230] rounded-3xl shadow-2xl p-6 md:p-8">
+
+        <h1 className="text-2xl md:text-3xl font-extrabold text-[#EAF7EE] text-center mb-2">
+          {isLogin ? "Welcome Back" : "Create Account"}
+        </h1>
+        <p className="text-[#8FBE9F] text-sm text-center mb-6">
+          {isLogin ? "Login to continue ordering" : "Sign up to get started"}
+        </p>
+
+        <form className="flex flex-col gap-4">
+
+          {!isLogin && (
+            <div>
+              <label className="text-[#8FBE9F] text-sm mb-1 block">Full Name</label>
+              <input
+                type="text"
+                placeholder="Enter your full name"
+                value={fullName}
+                onChange={(e) => {
+                  setFullName(e.target.value)
+                }}
+                className="w-full border border-[#1B5230] p-2.5 rounded-lg bg-[#0E2A18] text-[#EAF7EE] placeholder:text-[#8FBE9F]/60 outline-none focus:ring-2 focus:ring-[#27D673]/60 focus:border-[#27D673]"
+              />
+            </div>
+          )}
+
+          <div>
+            <label className="text-[#8FBE9F] text-sm mb-1 block">Email</label>
+            <input
+              type="email"
+              placeholder="Enter your email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              className="w-full border border-[#1B5230] p-2.5 rounded-lg bg-[#0E2A18] text-[#EAF7EE] placeholder:text-[#8FBE9F]/60 outline-none focus:ring-2 focus:ring-[#27D673]/60 focus:border-[#27D673]"
+            />
+          </div>
+
+          <div>
+            <label className="text-[#8FBE9F] text-sm mb-1 block">Password</label>
+            <input
+              type="password"
+              placeholder="Enter your password"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+              className="w-full border border-[#1B5230] p-2.5 rounded-lg bg-[#0E2A18] text-[#EAF7EE] placeholder:text-[#8FBE9F]/60 outline-none focus:ring-2 focus:ring-[#27D673]/60 focus:border-[#27D673]"
+            />
+          </div>
+
+          <button
+            type="submit"
+            className="w-full bg-[#27D673] text-[#06250F] font-bold py-2.5 rounded-lg hover:bg-[#3CE585] transition-colors duration-200 mt-2 cursor-pointer"
+            onClick={(e) => {
+              e.preventDefault();
+              loginHandler();
+              setUserName(fullName);
+              navigate("/")             
+            }}
+          >
+            {isLogin ? "Login" : "Sign Up"}
+          </button>
+
+        </form>
+
+        <p className="text-center text-sm text-[#8FBE9F] mt-6">
+          {isLogin ? "Don't have an account?" : "Already have an account?"}{" "}
+          <button
+            type="button"
+            onClick={() => setIsLogin(!isLogin)}
+            className="text-[#27D673] font-semibold hover:underline cursor-pointer"
+          >
+            {isLogin ? "Sign Up" : "Login"}
+          </button>
+        </p>
+
+      </div>
+    </div>
+  );
+};
+
+export default LoginPage; 

@@ -2,10 +2,12 @@ import { useSelector } from "react-redux";
 import CartItem from "./CartItem";
 import { clearCart } from "../utils/CartSlice";
 import { useDispatch } from "react-redux";
+import { useNavigate } from "react-router-dom";
 
 const Cart = () => {
 
     const cartItems = useSelector((store) => store.cart.items);
+    const navigate = useNavigate();
     
     const dispatch = useDispatch();
     const clickHandler = () => {
@@ -33,9 +35,16 @@ const Cart = () => {
                         return total + (price*qty || 0);
                     }, 0)}
                 </div>
+                <button
+                    className="border border-[#1B5230] p-2 m-2 md:m-5 bg-[#27D673] text-[#06250F] rounded-lg font-bold cursor-pointer hover:bg-[#c3e3d1]" onClick={()=>{
+                        navigate("/Order")
+                    }}>
+                    Order
+                </button>
             </div>
             {cartItems.length == 0 ? (<a href="/" className="text-[#8FBE9F] hover:underline hover:text-[#27D673]">Cart is Empty</a>) : ""}
             <CartItem menuPart={cartItems} />
+
 
         </div>
     )

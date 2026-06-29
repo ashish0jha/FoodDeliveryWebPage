@@ -2,7 +2,7 @@ import { addItem, addItemsQuantity } from "../utils/CartSlice";
 import { useDispatch } from "react-redux";
 import AddedToCart from "./AddedToCart";
 import { useState } from "react";
-import { Link } from "react-router";
+import { Link } from "react-router-dom";
 
 const Item = (({ items }) => {
     const dispatch = useDispatch();
