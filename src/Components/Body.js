@@ -1,11 +1,13 @@
 import Cards3 from "./Card3";
 import { useState, useEffect, useContext } from "react";
 import Shimmer from "./Shimmer";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import onlineStatus from "../utils/useonlinestatus";
 import axios from "axios";
 import { baseUrl } from "../utils/constants";
 import useRestaurants from "../utils/useRestra";
+import { addRestaurent } from "../utils/restaurentSlice";
+import { useDispatch } from "react-redux";
 
 let resiii;
 
@@ -14,9 +16,17 @@ const Body = () => {
     const [searchText, setsearchText] = useState("");
     const [msg, setmsg] = useState("");
     const isOnline = onlineStatus();
+    const dispatch = useDispatch();
 
     const { ResList, setResList, loading, error, hasMore, lastCardRef } = useRestaurants();
     resiii = ResList;
+
+    const putOnRedux = ()=>{
+        dispatch(addRestaurent(ResList));
+    }
+    useEffect(()=>{
+        putOnRedux();
+    },[ResList])
 
     if (ResList.length === 0) {
         return <Shimmer />
@@ -106,9 +116,7 @@ const Body = () => {
                         const isLast = index === ResList.length - 1;
                         return (
                             <div key={index} ref={isLast ? lastCardRef : null} className="animate-fadeIn">
-                                <Link to={`/Restaurant/${resty.resId}`} >
-                                    <Cards3 Res={resty} />
-                                </Link>
+                                <Cards3 Res={resty} />
                             </div>
                         )
                     })

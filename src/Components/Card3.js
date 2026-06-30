@@ -1,16 +1,23 @@
 import { CDN_Link } from "../utils/links";
 import { useContext, useState } from "react";
 import UserContext from "../utils/UserContext";
+import { useNavigate } from "react-router-dom";
+import axios from "axios";
+import { baseUrl } from "../utils/constants";
 
 //Destructuring 
 const Cards3=({Res})=>{
     const [imgLoaded, setImgLoaded] = useState(false);
-    const {name,rating,timeToReach,cuisines,imageId}=Res;
+    const {resId ,name,rating,timeToReach,cuisines,imageId}=Res;
+    const navigate = useNavigate();
 
     const data=useContext(UserContext);
 
     return(
-        <div className='w-full md:w-70 h-75 my-1.25 mx-auto md:mx-2.5 hover:shadow-2xl rounded-4xl hover:scale-105 duration-300 bg-[#123B22] border border-[#1B5230] overflow-hidden'>
+        <div className='w-full md:w-70 h-75 my-1.25 mx-auto md:mx-2.5 hover:shadow-2xl rounded-4xl hover:scale-105 duration-300 bg-[#123B22] border border-[#1B5230] overflow-hidden'
+            onClick={()=>{
+                navigate(`/Restaurant/${resId}`)
+            }}>
             <div className="w-full h-43 bg-[#0E2A18] relative">
                 <img
                     className={`w-full h-43 rounded-4xl object-cover transition-opacity duration-500 ${

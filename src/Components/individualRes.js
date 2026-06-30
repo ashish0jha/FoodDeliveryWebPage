@@ -1,8 +1,10 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import Shimmer from "./Shimmer";
 import useRestaurantMenu from "../utils/userestaurantMenu";
 import Accordian from "./Accordian";
+import axios from "axios";
+import { baseUrl } from "../utils/constants";
 
 const IndividualRes = () => {
 
@@ -15,13 +17,36 @@ const IndividualRes = () => {
     if (!restaurant) {
         return <Shimmer />;
     }
+    const { id, name, avgRating, totalRatings, costForTwo, cuisines, areaName, deliveryTime, menu } = restaurant;
+    const postingData = async ()=>{
+        try{
+            const res = await axios.post(baseUrl+"/check" ,{
+                resId:id,
+                name,
+                rating:avgRating,
+                totalRatings,
+                costForTwo,
+                cuisines,
+                areaName,
+                timeToReach:deliveryTime,
+                menu
+            },{withCredentials:true})
 
-    const { name, avgRating, totalRatings, costForTwo, cuisines, areaName, deliveryTime, menu } = restaurant;
+            console.log("haha");
+        }
+        catch(err){
+            console.error(err.message)
+        }
+    }
 
     return (
         <div className="flex flex-col items-center justify-center bg-[#15201A] min-h-screen pb-10 px-4">
 
-            <h1 className="font-extrabold text-xl md:text-3xl m-6 md:m-10 text-[#EAF7EE] text-center">{name}</h1>
+            <h1 className="font-extrabold text-xl md:text-3xl m-6 md:m-10 text-[#EAF7EE] text-center"
+            onClick={()=>{
+                console.log("click");
+                postingData();
+            }}>{name}</h1>
 
             <div className="w-full md:w-[45vw] rounded-4xl border border-[#1B5230] shadow-2xl p-4 md:p-5 px-5 md:px-7.5 mb-8 md:mb-10 bg-[#123B22]">
                 <div className="flex items-center rounded-[20px] p-2.5 flex-wrap">

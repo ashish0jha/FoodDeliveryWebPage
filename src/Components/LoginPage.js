@@ -3,28 +3,58 @@ import { useNavigate } from "react-router-dom";
 import UserContext from "../utils/UserContext";
 import axios from "axios";
 import { baseUrl } from "../utils/constants";
+import { useDispatch } from "react-redux";
+import { addUser } from "../utils/userSlice"
 
 const LoginPage = () => {
   const [isLogin, setIsLogin] = useState(true);
   const navigate = useNavigate();
 
   const [fullName, setFullName] = useState("");
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
+  const [email, setEmail] = useState("ashish@gmail.com");
+  const [password, setPassword] = useState("Ashish@123");
+  const [error, setError] = useState("");
 
-  const { LoggedIn , setUserName } = useContext(UserContext);
+  const { LoggedIn, setUserName } = useContext(UserContext);
+  const dispatch = useDispatch();
 
-  const loginHandler = async ()=>{
-    try{
-      const res = await axios.post(baseUrl + "/signup",{
+  const singupHandler = async () => {
+    try {
+      const res = await axios.post(baseUrl + "/signup", {
         fullName,
         email,
         password
-      },{withCredentials:true});
-      console.log(res.data);
+      }, { withCredentials: true });
+
+      setUserName(fullName);
+      navigate("/");
     }
-    catch(err){
-      console.error("ERROR : "+err.message);
+    catch (err) {
+      if (err.response) {
+        setError(err.response.data.message);
+      }
+      else {
+        setError("Something is Wrong")
+      }
+      console.error("ERROR : " + err);
+    }
+  }
+  const loginHandler = async () => {
+    try {
+      const res = await axios.post(baseUrl + "/login", { email, password }, { withCredentials: true });
+
+      const fullName = res.data.fullName;
+      dispatch(addUser(fullName))
+      setUserName(fullName)
+      navigate("/");
+    }
+    catch (err) {
+      if (err.response) {
+        setError(err.response.data.message);
+      } else {
+        setError("Somethig is wrong")
+      }
+      console.error("ERROR : " + err.message)
     }
   }
 
@@ -76,6 +106,7 @@ const LoginPage = () => {
               onChange={(e) => setPassword(e.target.value)}
               className="w-full border border-[#1B5230] p-2.5 rounded-lg bg-[#0E2A18] text-[#EAF7EE] placeholder:text-[#8FBE9F]/60 outline-none focus:ring-2 focus:ring-[#27D673]/60 focus:border-[#27D673]"
             />
+            {!isLogin && <p className="text-white text-[12px] text-center">(minLength: 8, minLowercase: 1, minUppercase: 1, minNumbers: 1, minSymbols: 1)</p>}
           </div>
 
           <button
@@ -83,14 +114,12 @@ const LoginPage = () => {
             className="w-full bg-[#27D673] text-[#06250F] font-bold py-2.5 rounded-lg hover:bg-[#3CE585] transition-colors duration-200 mt-2 cursor-pointer"
             onClick={(e) => {
               e.preventDefault();
-              loginHandler();
-              setUserName(fullName);
-              navigate("/")             
+              isLogin ? loginHandler() : singupHandler();
             }}
           >
             {isLogin ? "Login" : "Sign Up"}
           </button>
-
+          <p className="text-center text-red-500 font-semibold">{error}</p>
         </form>
 
         <p className="text-center text-sm text-[#8FBE9F] mt-6">

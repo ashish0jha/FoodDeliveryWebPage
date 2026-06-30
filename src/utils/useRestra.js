@@ -1,6 +1,8 @@
 import { useState, useEffect, useRef, useCallback } from "react";
 import axios from "axios";
 import { baseUrl } from "../utils/constants";
+import { useDispatch } from "react-redux";
+import { addRestaurent } from "./restaurentSlice";
 
 const useRestaurants = () => {
     const [ResList, setResList] = useState([]);
@@ -40,9 +42,7 @@ const useRestaurants = () => {
             if (observerRef.current) {
                 observerRef.current.disconnect();
             }
-            console.log("check")
-            observerRef.current = new IntersectionObserver((entries) => {   
-                console.log("Intersecting:", entries[0].isIntersecting)
+            observerRef.current = new IntersectionObserver((entries) => { 
                 if (entries[0].isIntersecting && hasMore) {
                     setPage((prevPage) => prevPage + 1);
                 }

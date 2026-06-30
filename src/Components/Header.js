@@ -3,6 +3,8 @@ import { useState, useContext, useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import UserContext from "../utils/UserContext";
 import { useSelector } from "react-redux";
+import axios from "axios";
+import { baseUrl } from "../utils/constants";
 
 const Header = () => {
 
@@ -15,6 +17,15 @@ const Header = () => {
     const { LoggedIn } = useContext(UserContext);
 
     const [logInName, setlogInName] = useState("");
+
+    const logoutHandler = async (req, res)=>{
+        try{
+            const res = await axios.post(baseUrl + "/logout" , {},{withCredentials:true});
+        }
+        catch(err){
+            console.error("ERROR : " + err.message);
+        }
+    }
     useEffect(()=>{
         setlogInName(LoggedIn);
         setName("LogOut")
@@ -51,6 +62,7 @@ const Header = () => {
                                     setName("LogOut");
                                     setlogInName(LoggedIn);
                                 } else if (Name === "LogOut") {
+                                    logoutHandler();
                                     setName("Login");
                                     setlogInName("");
                                 }
