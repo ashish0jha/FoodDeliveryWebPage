@@ -16,7 +16,7 @@ const IndividualRes = () => {
     const fetchRestrarent = async () =>{
         try{
             const res = await axios.get(baseUrl + "/restaurent/"+ resId,{withCredentials:true});
-            console.log(res.data.data);
+            
             setRestaurant(res.data.data)
         }
         catch(err) {

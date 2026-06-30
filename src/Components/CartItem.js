@@ -5,14 +5,13 @@ import { useState } from "react";
 import CartItemsIndividual from "./CartItemsIndividual";
 
 const CartItem = (({ menuPart }) => {
-
     const [showAdded, setShowAdded] = useState(false);
 
     return (
         <div className="w-full flex flex-col items-center">
             {showAdded && <AddedToCart msg="Removed from" />}
             {menuPart.map((menu, index) => {
-                return <CartItemsIndividual key={index} menu={menu}/>
+                return <CartItemsIndividual key={menu.id} menu={menu}/>
             })}
         </div>
     )
