@@ -2,10 +2,14 @@ import { createSlice } from "@reduxjs/toolkit";
 
 const restaurentSlice = createSlice({
     name: "restaurent",
-    initialState: null,
+    initialState:{
+        rest:[],
+    },
     reducers: {
         addRestaurent: (state, action) => {
-            return action.payload;
+            return {
+                rest:[...state.rest,...action.payload]
+            }
         },
         removeRestaurent: (state, action) => {
             return null;

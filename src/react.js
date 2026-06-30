@@ -12,11 +12,11 @@ import { useContext, useState } from "react";
 import UserContext from './utils/UserContext';
 import { Provider } from 'react-redux';
 import appStore from './utils/appStore';
-import Order from './Components/Order';
 import LoginPage from './Components/LoginPage';
 import axios from 'axios';
 import { baseUrl } from './utils/constants';
 import HomePage from './Components/HomePage';
+import Order from './Components/Order';
 
 const MainApp = () => {
     return (
