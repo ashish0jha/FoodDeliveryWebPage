@@ -1,4 +1,4 @@
-import { LOGO_Link } from "../utils/links";
+import { LOGO_Link } from "../utils/constants";
 import { useState, useContext, useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import UserContext from "../utils/UserContext";
@@ -44,13 +44,13 @@ const Header = () => {
                         <Link to="/"> Home</Link>
                     </li>
                     <li className="p-1.5 md:p-2 m-0.5 md:m-1.25 rounded-xl hover:scale-95 duration-100 text-[#EAF7EE] hover:bg-[#123B22] hover:text-[#27D673]">
-                        <Link to="/Contact">Contact</Link>
+                        <Link to="/contact">Contact</Link>
                     </li>
                     <li className="hidden sm:block p-1.5 md:p-2 m-0.5 md:m-1.25 rounded-xl hover:scale-95 duration-100 text-[#EAF7EE] hover:bg-[#123B22] hover:text-[#27D673]">
-                        <Link to="/About">About Us</Link>
+                        <Link to="/about">About Us</Link>
                     </li>
                     <li className="p-1.5 md:p-2 m-0.5 md:m-1.25 rounded-xl hover:scale-95 duration-100 text-[#EAF7EE] hover:bg-[#123B22] hover:text-[#27D673]">
-                        <Link to="/Cart">Cart - {CartItems.length}</Link>
+                        <Link to="/cart">Cart - {CartItems.length}</Link>
                     </li>
                     <li className="flex flex-col items-center justify-center">
                         {logInName && <p className="text-[10px] text-green-500">Welcome , {logInName}</p>}

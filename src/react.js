@@ -20,9 +20,7 @@ import HomePage from './Components/HomePage';
 
 const MainApp = () => {
     return (
-        <Provider store={appStore}>
-            <HomePage/>
-        </Provider>
+        <HomePage/>
     )
 }
 
@@ -37,23 +35,23 @@ const AppRouter = createBrowserRouter([
                 element: <Body />
             },
             {
-                path: "/About",
+                path: "/about",
                 element: <About />
             },
             {
-                path: "/Contact",
+                path: "/contact",
                 element: <Contact />
             },
             {
-                path: "/Restaurant/:ResId",
+                path: "/restaurant/:resId",
                 element: <IndividualRes />
             },
             {
-                path: "/Cart",
+                path: "/cart",
                 element: <Cart />
             },
             {
-                path: "/Order",
+                path: "/order",
                 element: <Order />
             },
         ],
@@ -66,5 +64,8 @@ const AppRouter = createBrowserRouter([
 ])
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-
-root.render(<RouterProvider router={AppRouter} />);
+root.render(
+    <Provider store={appStore}>
+        <RouterProvider router={AppRouter} />
+    </Provider>
+);

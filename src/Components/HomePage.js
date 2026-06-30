@@ -5,8 +5,6 @@ import axios from 'axios';
 import Header from './Header';
 import LoginPage from './LoginPage';
 import { baseUrl } from '../utils/constants';
-import { Provider } from 'react-redux';
-import appStore from '../utils/appStore';
 
 const HomePage = () => {
     const data = useContext(UserContext);
@@ -16,6 +14,7 @@ const HomePage = () => {
         try{
             const res = await axios.get(baseUrl+"/checklogin",{withCredentials:true});
             setUserName(res.data.fullName)
+            dispatch(addUser(res.data.fullName))
         }
         catch(err) {
             if(err.statusCode===401){
@@ -29,14 +28,10 @@ const HomePage = () => {
   return (
     <>
         <UserContext.Provider value={{ LoggedIn: userName, setUserName }}>
-            {userName ? (<div id="container">
+            <div id="container">
                 <Header/>
                 <Outlet/>
-            </div>) : (
-                <Provider store={appStore}>
-                    <LoginPage />
-                </Provider>
-            )}
+            </div>
         </UserContext.Provider>
     </>
   )

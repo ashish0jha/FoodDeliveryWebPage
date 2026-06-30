@@ -1,8 +1,6 @@
 import { useState, useEffect, useRef, useCallback } from "react";
 import axios from "axios";
 import { baseUrl } from "../utils/constants";
-import { useDispatch } from "react-redux";
-import { addRestaurent } from "./restaurentSlice";
 
 const useRestaurants = () => {
     const [ResList, setResList] = useState([]);

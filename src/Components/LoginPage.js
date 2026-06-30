@@ -25,9 +25,9 @@ const LoginPage = () => {
         email,
         password
       }, { withCredentials: true });
-
+      dispatch(addUser(fullName))
       setUserName(fullName);
-      navigate("/");
+      navigate(-1);
     }
     catch (err) {
       if (err.response) {
@@ -46,7 +46,7 @@ const LoginPage = () => {
       const fullName = res.data.fullName;
       dispatch(addUser(fullName))
       setUserName(fullName)
-      navigate("/");
+      navigate(-1);
     }
     catch (err) {
       if (err.response) {
