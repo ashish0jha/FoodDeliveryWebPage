@@ -38,7 +38,7 @@ const CartHeader = ({cartItems,setCartItems}) => {
         <div className="text-lg md:text-xl font-bold m-2 md:m-5 text-[#EAF7EE]">
             Total cost : ₹{totalAmounToPay}
         </div>
-        <Order amount={totalAmounToPay}/>
+        <Order amount={totalAmounToPay} setCartItems={setCartItems}/>
     </div>
   )
 }

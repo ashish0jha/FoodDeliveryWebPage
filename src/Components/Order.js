@@ -2,13 +2,16 @@ import React, { useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import axios from 'axios';
 import { baseUrl } from '../utils/constants';
+import { clearCart } from '../utils/CartSlice';
+import { useDispatch } from 'react-redux';
 
-const Order = ({ amount }) => {
+const Order = ({ amount, setCartItems }) => {
 
   const navigate = useNavigate();
-  const [orderDone,setOrderDone] = useState(false);
-  const [orderMessage,setOrderMessage] = useState("");
-  const [themeColor ,setThemeColor] = useState("")
+  const [orderDone, setOrderDone] = useState(false);
+  const [orderMessage, setOrderMessage] = useState("");
+  const [themeColor, setThemeColor] = useState("")
+  const dispatch = useDispatch();
 
   const paymentHandler = async () => {
     if (amount === 0) return;
@@ -46,29 +49,39 @@ const Order = ({ amount }) => {
   }
 
   const verifyPayment = async () => {
-    try{
-      const res = await axios.get(baseUrl+"/payment/verify",{withCredentials:true});
+    try {
+      const res = await axios.get(baseUrl + "/payment/verify", { withCredentials: true });
 
-      if(res.data.isPaymentDone){
+      if (res.data.isPaymentDone) {
         setOrderDone(true);
         setOrderMessage("Your Order is placed SuccessFully");
         setThemeColor("green")
-      }else{
+        clearCartHandler();
+      } else {
         setOrderMessage("Payment failed");
         setThemeColor("red")
       }
-      setTimeout(()=>{
+      setTimeout(() => {
         setOrderDone(false)
-      },3000)
+      }, 3000)
     }
-    catch(err) {
+    catch (err) {
       console.log(err.status);
     }
   }
-
-  useEffect(()=>{
+  const clearCartHandler = async () => {
+    try {
+      const res = await axios.delete(baseUrl + "/cart/clear", { withCredentials: true });
+      dispatch(clearCart());
+      () => setCartItems([]);
+    }
+    catch (err) {
+      console.error(err.message)
+    }
+  }
+  useEffect(() => {
     verifyPayment()
-  },[])
+  }, [])
 
   return (
     <>
@@ -79,7 +92,7 @@ const Order = ({ amount }) => {
         Order
       </button>
     </>
-    
+
   )
 }
 
