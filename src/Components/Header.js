@@ -18,18 +18,21 @@ const Header = () => {
 
     const [logInName, setlogInName] = useState("");
 
-    const logoutHandler = async (req, res)=>{
-        try{
-            const res = await axios.post(baseUrl + "/logout" , {},{withCredentials:true});
+    const logoutHandler = async (req, res) => {
+        try {
+            const res = await axios.post(baseUrl + "/logout", {}, { withCredentials: true });
         }
-        catch(err){
+        catch (err) {
+            if (err.status === 401) {
+                navigate("/login")
+            }
             console.error("ERROR : " + err.message);
         }
     }
-    useEffect(()=>{
+    useEffect(() => {
         setlogInName(LoggedIn);
         setName("LogOut")
-    },[LoggedIn])
+    }, [LoggedIn])
 
     return (
         <div className="sticky top-0 z-50 flex justify-between shadow-xl items-center h-[70px] md:h-[100px] bg-[#15201A] border-b border-[#1B5230] w-full px-3 md:px-0 cursor-pointer">

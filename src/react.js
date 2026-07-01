@@ -16,7 +16,6 @@ import LoginPage from './Components/LoginPage';
 import axios from 'axios';
 import { baseUrl } from './utils/constants';
 import HomePage from './Components/HomePage';
-import Order from './Components/Order';
 
 const MainApp = () => {
     return (
@@ -49,10 +48,6 @@ const AppRouter = createBrowserRouter([
             {
                 path: "/cart",
                 element: <Cart />
-            },
-            {
-                path: "/order",
-                element: <Order />
             },
         ],
         errorElement: <Error />,
