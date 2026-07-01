@@ -12,6 +12,7 @@ const Order = ({ amount, setCartItems }) => {
   const [orderMessage, setOrderMessage] = useState("");
   const [themeColor, setThemeColor] = useState("")
   const dispatch = useDispatch();
+  const [orderId,setOrderId] = useState("");
 
   const paymentHandler = async () => {
     if (amount === 0) return;
@@ -19,6 +20,7 @@ const Order = ({ amount, setCartItems }) => {
       const order = await axios.post(baseUrl + "/payment/order", { amount }, { withCredentials: true });
       console.log(order);
       const { keyId, currency, orderId, notes } = order.data;
+      setOrderId(orderId);
       const options = {
         key: keyId,
         amount: order.amount,
@@ -50,7 +52,7 @@ const Order = ({ amount, setCartItems }) => {
 
   const verifyPayment = async () => {
     try {
-      const res = await axios.get(baseUrl + "/payment/verify", { withCredentials: true });
+      const res = await axios.post(baseUrl + "/payment/verify",{orderId}, { withCredentials: true });
 
       if (res.data.isPaymentDone) {
         setOrderDone(true);
@@ -58,6 +60,7 @@ const Order = ({ amount, setCartItems }) => {
         setThemeColor("green")
         clearCartHandler();
       } else {
+        console.log("Hello from frontEnd");
         setOrderMessage("Payment failed");
         setThemeColor("red")
       }
